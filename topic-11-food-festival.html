@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>11. Food Festival - Professional Skills | Mahima Paseda Kusumsiri</title>
+    <meta name="description" content="Learn about the comprehensive planning process for organizing a successful food festival, including team coordination, logistics, and execution strategies.">
+
+    <meta name="keywords" content="food festival, event management, team coordination, project planning, professional skills">
+    <meta name="author" content="Mahima Paseda Kusumsiri">
+    <link rel="canonical" href="https://mahimapaseda.com/topic-11-food-festival.html">
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Food Festival Specific Styles */
+        .food-festival-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .food-festival-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                url('img/foodfest01.jpg') center/cover,
+                url('img/foodfest02.jpg') center/cover,
+                url('img/foodfest03.jpg') center/cover,
+                url('img/foodfest04.jpg') center/cover,
+                url('img/foodfest05.jpg') center/cover,
+                url('img/foodfest06.jpg') center/cover,
+                url('img/foodfest07.jpg') center/cover;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            animation: foodFestivalBackground 21s ease-in-out infinite;
+            opacity: 0.3;
+        }
+
+        .food-festival-hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(240, 147, 251, 0.1) 0%, transparent 50%);
+            animation: heroGlow 20s ease-in-out infinite;
+        }
+
+        @keyframes foodFestivalBackground {
+            0% { 
+                background-image: url('img/foodfest01.jpg');
+                opacity: 0.3;
+            }
+            14.28% { 
+                background-image: url('img/foodfest02.jpg');
+                opacity: 0.4;
+            }
+            28.56% { 
+                background-image: url('img/foodfest03.jpg');
+                opacity: 0.3;
+            }
+            42.84% { 
+                background-image: url('img/foodfest04.jpg');
+                opacity: 0.4;
+            }
+            57.12% { 
+                background-image: url('img/foodfest05.jpg');
+                opacity: 0.3;
+            }
+            71.4% { 
+                background-image: url('img/foodfest06.jpg');
+                opacity: 0.4;
+            }
+            85.68% { 
+                background-image: url('img/foodfest07.jpg');
+                opacity: 0.3;
+            }
+            100% { 
+                background-image: url('img/foodfest01.jpg');
+                opacity: 0.3;
+            }
+        }
+
+        @keyframes heroGlow {
+            0%, 100% { opacity: 0.8; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        .food-festival-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .food-festival-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .food-festival-hero .topic-number {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .food-festival-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .food-festival-content {
+            background: #f8fafc;
+            padding: 4rem 0;
+        }
+
+        .food-festival-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Image Gallery Styles */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        /* Mobile Image Slider */
+        .mobile-slider {
+            display: none;
+            position: relative;
+            margin: 3rem 0;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .slider-item {
+            min-width: 100%;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .slider-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .slider-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 2rem 1.5rem 1.5rem;
+        }
+
+        .slider-overlay h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .slider-overlay p {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* Slider Navigation */
+        .slider-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(102, 126, 234, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-dot.active {
+            background: #667eea;
+            transform: scale(1.2);
+        }
+
+        .slider-arrows {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #667eea;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .slider-arrows:hover {
+            background: white;
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .slider-arrow-left {
+            left: 15px;
+        }
+
+        .slider-arrow-right {
+            right: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 2rem 1.5rem 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-overlay h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-overlay p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* Content Cards */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .content-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
+        }
+
+        .content-card h3 {
+            color: #1e293b;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .content-card h3 i {
+            color: #667eea;
+            font-size: 1.2rem;
+        }
+
+        .content-card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .content-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content-card li {
+            color: #64748b;
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .content-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        /* Team Members List Styles */
+        .team-table {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-members-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .team-member {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            color: #1e293b;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-member::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+            border-color: #667eea;
+        }
+
+        .team-member:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Highlight Boxes */
+        .highlight-box {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .highlight-box h3 {
+            color: #1e293b;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .highlight-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlight-box li {
+            color: #64748b;
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .highlight-box li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        /* Learning Outcomes */
+        .learning-outcomes {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 3rem;
+        }
+
+        .learning-outcomes h2 {
+            text-align: center;
+            color: #1e293b;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .learning-outcomes h2 i {
+            color: #667eea;
+        }
+
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .outcome-item {
+            text-align: center;
+            padding: 2rem;
+            background: #f8fafc;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .outcome-item:hover {
+            transform: translateY(-5px);
+            background: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .outcome-item i {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .outcome-item h4 {
+            color: #1e293b;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .outcome-item p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Back to Chapters */
+        .back-to-chapters {
+            background: #f8fafc;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .back-to-chapters .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .back-to-chapters .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .food-festival-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .food-festival-hero p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .content-card {
+                padding: 2rem;
+            }
+
+            .outcomes-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .food-festival-section {
+                padding: 0 1rem;
+            }
+
+            /* Hide desktop gallery on mobile */
+            .image-gallery {
+                display: none;
+            }
+
+            /* Show mobile slider on mobile */
+            .mobile-slider {
+                display: block;
+            }
+
+            .slider-arrows {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+
+            .slider-arrow-left {
+                left: 10px;
+            }
+
+            .slider-arrow-right {
+                right: 10px;
+            }
+
+            .slider-item img {
+                height: 250px;
+            }
+
+            .team-table {
+                padding: 1rem;
+            }
+
+            .team-members-list {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+
+            .team-member {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+
+                <span class="logo-text">MPK</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ps-chapters.html" class="nav-link">PS Chapters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Food Festival Hero Section -->
+    <section class="food-festival-hero">
+        <div class="food-festival-hero-content">
+            <div class="topic-number">Lesson 11</div>
+            <h1>Food Festival</h1>
+            <p>Comprehensive guide to organizing and executing a successful food festival event with team coordination, planning, and management strategies.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="food-festival-content">
+        <!-- Event Gallery Section -->
+        <section class="food-festival-section">
+            <div class="section-header">
+                <h2 class="section-title">Event Gallery</h2>
+                <p class="section-subtitle">Visual documentation of our successful food festival event</p>
+            </div>
+            <!-- Desktop Gallery -->
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="img/foodfest01.jpg" alt="Food Festival Setup">
+                    <div class="gallery-overlay">
+                        <h4>Event Setup</h4>
+                        <p>Initial stall preparation and decoration</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foodfest03.jpg" alt="Food Display">
+                    <div class="gallery-overlay">
+                        <h4>Food Display</h4>
+                        <p>Beautiful presentation of our products</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foodfest04.jpg" alt="Customer Service">
+                    <div class="gallery-overlay">
+                        <h4>Customer Service</h4>
+                        <p>Team members serving customers</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foodfest05.jpg" alt="Event Atmosphere">
+                    <div class="gallery-overlay">
+                        <h4>Event Atmosphere</h4>
+                        <p>Lively atmosphere during the festival</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foodfest06.jpg" alt="Team Collaboration">
+                    <div class="gallery-overlay">
+                        <h4>Team Collaboration</h4>
+                        <p>Effective teamwork in action</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foodfest07.jpg" alt="Event Success">
+                    <div class="gallery-overlay">
+                        <h4>Event Success</h4>
+                        <p>Celebrating our successful event</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Slider -->
+            <div class="mobile-slider">
+                <div class="slider-container" id="sliderContainer">
+                    <div class="slider-item">
+                        <img src="img/foodfest01.jpg" alt="Food Festival Setup">
+                        <div class="slider-overlay">
+                            <h4>Event Setup</h4>
+                            <p>Initial stall preparation and decoration</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/foodfest02.jpg" alt="Team Preparation">
+                        <div class="slider-overlay">
+                            <h4>Team Preparation</h4>
+                            <p>Team members preparing food items</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/foodfest03.jpg" alt="Food Display">
+                        <div class="slider-overlay">
+                            <h4>Food Display</h4>
+                            <p>Beautiful presentation of our products</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/foodfest04.jpg" alt="Customer Service">
+                        <div class="slider-overlay">
+                            <h4>Customer Service</h4>
+                            <p>Team members serving customers</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/foodfest05.jpg" alt="Event Atmosphere">
+                        <div class="slider-overlay">
+                            <h4>Event Atmosphere</h4>
+                            <p>Lively atmosphere during the festival</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/foodfest06.jpg" alt="Team Collaboration">
+                        <div class="slider-overlay">
+                            <h4>Team Collaboration</h4>
+                            <p>Effective teamwork in action</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/foodfest07.jpg" alt="Event Success">
+                        <div class="slider-overlay">
+                            <h4>Event Success</h4>
+                            <p>Celebrating our successful event</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="slider-arrows slider-arrow-left" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-arrows slider-arrow-right" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Navigation Dots -->
+                <div class="slider-nav">
+                    <div class="nav-dot active" data-slide="0"></div>
+                    <div class="nav-dot" data-slide="1"></div>
+                    <div class="nav-dot" data-slide="2"></div>
+                    <div class="nav-dot" data-slide="3"></div>
+                    <div class="nav-dot" data-slide="4"></div>
+                    <div class="nav-dot" data-slide="5"></div>
+                    <div class="nav-dot" data-slide="6"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Member Tasks Section -->
+        <section class="food-festival-section">
+            <div class="section-header">
+                <h2 class="section-title">Team Members</h2>
+                <p class="section-subtitle">Our dedicated team of 10 members who made the food festival a success</p>
+                </div>
+
+            <div class="team-table">
+                <div class="team-members-list">
+                    <div class="team-member">U.G.C. Nayanathara</div>
+                    <div class="team-member">P.G.I.S. Dissanayaka</div>
+                    <div class="team-member">G.M.D. Fernando</div>
+                    <div class="team-member">R.N. Dulanjali</div>
+                    <div class="team-member">A.H.D. Buddhima Nirmani</div>
+                    <div class="team-member">K.K. Vishal</div>
+                    <div class="team-member">K.A.A.S. Thennakoon</div>
+                    <div class="team-member">G.G.M.P. Kusumsiri</div>
+                    <div class="team-member">M.M.I.M. Bandara</div>
+                    <div class="team-member">T.H. Samaranayake</div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- My Responsibilities Section -->
+        <section class="food-festival-section">
+            <div class="section-header">
+                <h2 class="section-title">My Responsibilities</h2>
+                <p class="section-subtitle">My key contributions and role in the food festival project</p>
+            </div>
+            <div class="content-card">
+
+                <p>As the primary photographer for the event, I was responsible for capturing all the key moments, documenting the entire process from setup to completion, and creating visual content that showcases our team's hard work and the festival's success.</p>
+                
+                <div class="highlight-box">
+                    <h3>My Key Responsibilities:</h3>
+                    <ul>
+                        <li><strong>Photography (Main Role):</strong> Documented the entire food festival event, capturing setup, preparation, customer interactions, and team collaboration moments</li>
+                        <li><strong>Achcharu Preparation:</strong> Assisted in preparing the traditional Sri Lankan achcharu, ensuring quality and consistency</li>
+                        <li><strong>Stall Setup:</strong> Contributed to the physical setup and arrangement of our festival stall</li>
+                        <li><strong>Decoration:</strong> Helped create an attractive and welcoming stall environment for customers</li>
+                        <li><strong>Assisted with Sales:</strong> Supported the sales team during peak hours and customer interactions</li>
+                        <li><strong>Crowd Engagement:</strong> Actively engaged with customers and festival attendees to create a positive experience</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planning Process Section -->
+        <section class="food-festival-section">
+            <div class="section-header">
+                <h2 class="section-title">Planning Process</h2>
+                <p class="section-subtitle">Comprehensive planning approach for successful event execution</p>
+                </div>
+
+            <div class="content-card">
+                <h3><i class="fas fa-calendar-alt"></i> Strategic Planning</h3>
+                    <p>The planning process was started two weeks in advance. The first part was a meeting to determine the menu items based on popularity, ability to prepare, and cost. Once the menu items were finalized, our group decided to name the stall as "දුන්නම කන්නං කාලා දුවන්නම්", a lighthearted name that reflected both the theme and the products we offered.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>Key Parts of the Planning Process:</h3>
+                        <ul>
+
+                        <li><strong>Menu Selection:</strong> We decided achcharu, potato chips, and smoothies were the items we wanted to offer, taking into consideration the demand, profitability, and preparation time.</li>
+                        <li><strong>Market Research:</strong> Checked current prices for the items needed and found vendors who offered the best price.</li>
+                        <li><strong>Team Responsibilities:</strong> We allocated team members for purchasing, making, marketing, and managing the stall.</li>
+                        <li><strong>Marketing Strategy:</strong> Four days prior to the event, through social media and word of mouth, we published posts to generate excitement and interest in our products.</li>
+                        <li><strong>Procurement Planning:</strong> The distance of members from the event affected buying and purchasing. Team members who lived far bought ingredients and packaging ahead of time to bring on the day of the event.</li>
+                        <li><strong>Food Preparation:</strong> The achcharu and chips were prepared fresh on the event day and the day before the event. The smoothies were prepared on the day of the event for freshness.</li>
+                        <li><strong>Logistics Management:</strong> We organized containers, cups, and utensils so that we had them, and that packaging was organized for efficient product selling.</li>
+                        </ul>
+                    </div>
+                </div>
+
+        </section>
+
+        
+
+        
+
+        <!-- Challenges and Lessons Learned Section -->
+        <section class="food-festival-section">
+            <div class="section-header">
+                <h2 class="section-title">Challenges & Lessons Learned</h2>
+                <p class="section-subtitle">Real-world insights from event management experience</p>
+            </div>
+
+            <div class="content-grid">
+            <div class="content-card">
+
+                    <h3><i class="fas fa-exclamation-triangle"></i> Challenges Faced</h3>
+                    <ul>
+                        <li><strong>Space Management:</strong> The toughest challenge was space management, since we have a variety of different types of achcharu and smoothies the provided table was not very efficient although we handled it very well.</li>
+                        <li><strong>Decision Making:</strong> During the planning process, since there was a pool of ideas deciding on the selling item took quite some time.</li>
+                        <li><strong>Quality Control:</strong> The cups that were purchased were not up to our expectations in size as well as quality.</li>
+                            <li><strong>Transportation:</strong> We prepared the smoothies in a team member's accommodation nearby. This required extra effort to transport them and ensure freshness and retain cooling of the smoothies.</li>
+                        </ul>
+                    </div>
+                    
+
+                <div class="content-card">
+                    <h3><i class="fas fa-lightbulb"></i> Valuable Lessons Learned</h3>
+                        <ul>
+
+                        <li><strong>Customer Diversity:</strong> During the sales, we observed that not all customers have the same need or want, also they are different in attitude as well. Although, some customers greeted us with positivity, there were a few customers who gave negative comments in regard to the worth they get for the money they pay.</li>
+                        <li><strong>Planning Importance:</strong> Having a prior sketch of the plan makes things easier and definitely hassle free.</li>
+                            <li><strong>Simplicity:</strong> Simple is better. Our food items did not require a hefty effort as some of the other stall's. It was just fruits and vegetables that we utilized to gain a profit.</li>
+
+                        <li><strong>Team Bonding:</strong> This might not be considered a lesson. But we became closer as friends and got to understand everyone better.</li>
+                        </ul>
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- Event Execution Section -->
+        <section class="food-festival-section">
+            <div class="section-header">
+                <h2 class="section-title">Event Execution</h2>
+                <p class="section-subtitle">Successful implementation and day-of-event management</p>
+            </div>
+            <div class="content-card">
+
+                <h3><i class="fas fa-play-circle"></i> Event Day Success</h3>
+                    <p>The food festival was held on 29th of July and started at 12:30 PM in the ground floor of BOC Merchant Tower. We set up our stall, which was in close proximity to the back entrance, so the visitors saw the stall as they entered the building.</p>
+                    
+
+                <div class="highlight-box">
+                        <h3>Key Execution Points:</h3>
+                        <ul>
+                            <li><strong>Setup:</strong> We were able to begin setting up the stall by 11:00 AM, and prepared the tables and display, along with decorations, before the commencement of the event.</li>
+
+                        <li><strong>Product Arrangement:</strong> All products (achcharu, potato chips, and smoothies) were arranged in a creative manner. Potato chips were in bags beforehand for speedy purchases.</li>
+                        <li><strong>Peak Sales:</strong> The lunch break was one of the most active selling times, with the most people present at around 1:00 PM.</li>
+                        <li><strong>Popular Items:</strong> Achcharu was the fastest-selling item, and all of the initial stock sold out quickly, which led to previous customers coming back later in the day, hoping to purchase again.</li>
+                        <li><strong>Sales Tracking:</strong> All sales were tracked the entire time, so that we could keep a record.</li>
+                        <li><strong>Location Advantage:</strong> The stall was positioned perfectly at the entrance, so there was a lot of foot traffic.</li>
+                        <li><strong>Team Efficiency:</strong> The team operated in a seamless manner, and ensured a speedy delivery, despite the busy times.</li>
+                        <li><strong>Marketing Success:</strong> Our marketing step prior to the event made people curious and got some people to come to the event, which was a successful presence!</li>
+                        </ul>
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- Learning Outcomes Section -->
+        <section class="food-festival-section">
+            <div class="learning-outcomes">
+                <h2><i class="fas fa-graduation-cap"></i> What You Will Learn</h2>
+                <div class="outcomes-grid">
+                    <div class="outcome-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <h4>Event Planning</h4>
+                        <p>Comprehensive planning process for food festivals including timeline management and resource allocation</p>
+                    </div>
+                    <div class="outcome-item">
+                        <i class="fas fa-users-cog"></i>
+                        <h4>Team Management</h4>
+                        <p>Effective task allocation and team coordination strategies for successful project execution</p>
+                    </div>
+                    <div class="outcome-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Market Research</h4>
+                        <p>Understanding demand, pricing strategies, and vendor selection for optimal business outcomes</p>
+                    </div>
+                    <div class="outcome-item">
+                        <i class="fas fa-truck"></i>
+                        <h4>Logistics Management</h4>
+                        <p>Procurement, storage, and transportation planning for efficient operations</p>
+                    </div>
+                    <div class="outcome-item">
+                        <i class="fas fa-bullhorn"></i>
+                        <h4>Marketing Strategies</h4>
+                        <p>Social media and word-of-mouth marketing techniques for event promotion</p>
+                    </div>
+                    <div class="outcome-item">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <h4>Problem Solving</h4>
+                        <p>Handling challenges and adapting to unexpected situations in real-time</p>
+                    </div>
+                    <div class="outcome-item">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Customer Service</h4>
+                        <p>Understanding diverse customer needs and expectations for better service delivery</p>
+            </div>
+
+                    <div class="outcome-item">
+                        <i class="fas fa-calculator"></i>
+                        <h4>Financial Management</h4>
+                        <p>Budget planning and cost control strategies for profitable operations</p>
+                </div>
+
+                    <div class="outcome-item">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Quality Control</h4>
+                        <p>Maintaining product quality and freshness standards throughout the event</p>
+                    </div>
+
+                    <div class="outcome-item">
+                        <i class="fas fa-user-friends"></i>
+                        <h4>Team Collaboration</h4>
+                        <p>Working effectively in diverse teams with different skill sets and backgrounds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+    <!-- Back to Chapters -->
+    <section class="back-to-chapters">
+        <div class="container">
+            <a href="ps-chapters.html" class="btn">
+            <i class="fas fa-arrow-left"></i>
+            Back to PS Chapters
+        </a>
+    </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+
+                <p>&copy; 2024 Mahima Paseda Kusumsiri. All rights reserved.</p>
+                <p>Professional Skills Development - Building Tomorrow's Leaders</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Mobile Image Slider Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const sliderContainer = document.getElementById('sliderContainer');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const navDots = document.querySelectorAll('.nav-dot');
+            
+            let currentSlide = 0;
+            const totalSlides = 7;
+            
+            // Update slider position
+            function updateSlider() {
+                const translateX = -currentSlide * 100;
+                sliderContainer.style.transform = `translateX(${translateX}%)`;
+                
+                // Update navigation dots
+                navDots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+            }
+            
+            // Go to specific slide
+            function goToSlide(slideIndex) {
+                currentSlide = slideIndex;
+                updateSlider();
+            }
+            
+            // Go to next slide
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateSlider();
+            }
+            
+            // Go to previous slide
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                updateSlider();
+            }
+            
+            // Event listeners
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+            
+            // Navigation dots
+            navDots.forEach((dot, index) => {
+                dot.addEventListener('click', () => goToSlide(index));
+            });
+            
+            // Touch/swipe support
+            let startX = 0;
+            let endX = 0;
+            
+            sliderContainer.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+            });
+            
+            sliderContainer.addEventListener('touchend', (e) => {
+                endX = e.changedTouches[0].clientX;
+                handleSwipe();
+            });
+            
+            function handleSwipe() {
+                const threshold = 50;
+                const diff = startX - endX;
+                
+                if (Math.abs(diff) > threshold) {
+                    if (diff > 0) {
+                        nextSlide();
+                    } else {
+                        prevSlide();
+                    }
+                }
+            }
+            
+            // Auto-play functionality (optional)
+            let autoPlayInterval;
+            
+            function startAutoPlay() {
+                autoPlayInterval = setInterval(nextSlide, 4000);
+            }
+            
+            function stopAutoPlay() {
+                clearInterval(autoPlayInterval);
+            }
+            
+            // Start auto-play
+            startAutoPlay();
+            
+            // Pause on hover/touch
+            const mobileSlider = document.querySelector('.mobile-slider');
+            mobileSlider.addEventListener('mouseenter', stopAutoPlay);
+            mobileSlider.addEventListener('mouseleave', startAutoPlay);
+            mobileSlider.addEventListener('touchstart', stopAutoPlay);
+            mobileSlider.addEventListener('touchend', () => {
+                setTimeout(startAutoPlay, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07. Email Etiquettes - Professional Skills | Mahima Paseda Kusumsiri</title>
+    <meta name="description" content="Learn essential email etiquette skills for professional communication, including subject lines, proofreading, and maintaining professionalism in business emails.">
+    <meta name="keywords" content="email etiquette, professional communication, business email, email writing, workplace communication">
+    <meta name="author" content="Mahima Paseda Kusumsiri">
+    <link rel="canonical" href="https://mahimapaseda.com/topic-07-email-etiquettes.html">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Topic-specific styles */
+        .topic-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(240, 147, 251, 0.1) 0%, transparent 50%);
+            animation: heroGlow 20s ease-in-out infinite;
+        }
+
+        @keyframes heroGlow {
+            0%, 100% { opacity: 0.8; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        .topic-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .topic-hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .topic-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .topic-section {
+            margin-bottom: 60px;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .topic-section h2 {
+            color: #1e293b;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .topic-section h2 i {
+            color: #667eea;
+            font-size: 2rem;
+        }
+
+        .topic-section h3 {
+            color: #334155;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 30px 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .topic-section h3 i {
+            color: #667eea;
+            font-size: 1.5rem;
+        }
+
+        .topic-section p {
+            color: #64748b;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .topic-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .topic-section li {
+            color: #64748b;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .topic-section li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .learning-outcomes {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .learning-outcomes h3 {
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .learning-outcomes ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .learning-outcomes li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .learning-outcomes li::before {
+            content: '🎯';
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            font-size: 1.5rem;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 40px;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .topic-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .topic-hero p {
+                font-size: 1.1rem;
+            }
+            
+            .topic-content {
+                padding: 60px 15px;
+            }
+            
+            .topic-section {
+                padding: 30px 20px;
+            }
+            
+            .topic-section h2 {
+                font-size: 2rem;
+            }
+            
+            .topic-section h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">MPK</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ps-chapters.html" class="nav-link">PS Chapters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="topic-hero">
+        <div class="container">
+            <h1><i class="fas fa-envelope"></i> Email Etiquettes</h1>
+            <p>Master the art of professional email communication with proper etiquette and best practices</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="topic-content">
+        <a href="ps-chapters.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to PS Chapters
+        </a>
+
+        <!-- Definition Section -->
+        <div class="topic-section">
+            <h2><i class="fas fa-info-circle"></i> What is Email Etiquettes?</h2>
+            <p>A set of guidelines and practices aimed at maintaining professionalism, clarity, and courtesy during email communication. Email etiquette ensures that your messages are clear, respectful, and effective in conveying your intended message while maintaining a professional image.</p>
+        </div>
+
+        <!-- Basic Rules Section -->
+        <div class="topic-section">
+            <h2><i class="fas fa-list-check"></i> Basic Rules of Email Etiquette</h2>
+            
+            <h3><i class="fas fa-heading"></i> Use a Clear, Professional Subject Line</h3>
+            <p>Your subject line should clearly indicate the purpose of your email. It should be concise, descriptive, and professional. Avoid vague subjects like "Hello" or "Question" - instead, use specific subjects like "Meeting Request for Project Discussion" or "Follow-up on Yesterday's Presentation".</p>
+
+            <h3><i class="fas fa-spell-check"></i> Proofread Every Email You Send</h3>
+            <p>Always review your email for spelling, grammar, and punctuation errors before sending. A well-written email reflects professionalism and attention to detail. Use spell-check tools and read your email aloud to catch any awkward phrasing or errors.</p>
+
+            <h3><i class="fas fa-edit"></i> Write Your Email Before Entering the Recipient Email Address</h3>
+            <p>This prevents accidental sending of incomplete or draft emails. Complete your message, proofread it, and only then add the recipient's email address. This simple practice can save you from embarrassing mistakes and ensure your message is complete and polished.</p>
+
+            <h3><i class="fas fa-signature"></i> Include a Signature Block</h3>
+            <p>Always include a professional signature block with your name, title, company, and contact information. This provides context for the recipient and makes it easy for them to contact you. Keep your signature concise and professional.</p>
+
+            <h3><i class="fas fa-compress"></i> Keep Emails Brief and to the Point</h3>
+            <p>Respect the recipient's time by keeping your emails concise and focused. Get to the point quickly, use bullet points for multiple items, and avoid unnecessary details. If you need to discuss something in detail, consider scheduling a meeting or phone call instead.</p>
+        </div>
+
+        <!-- Learning Outcomes -->
+        <div class="learning-outcomes">
+            <h3><i class="fas fa-graduation-cap"></i> What I Learn</h3>
+            <ul>
+                <li>
+                    <strong>Professional Subject Lines</strong>
+                    <p>Creating clear, descriptive subject lines that immediately communicate the email's purpose</p>
+                </li>
+                <li>
+                    <strong>Proofreading</strong>
+                    <p>Developing the habit of reviewing emails for errors and clarity before sending</p>
+                </li>
+                <li>
+                    <strong>Signature Block</strong>
+                    <p>Creating professional email signatures that provide necessary contact information</p>
+                </li>
+                <li>
+                    <strong>Brevity</strong>
+                    <p>Writing concise, focused emails that respect the recipient's time and attention</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

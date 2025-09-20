@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08. Abstract Writing - Professional Skills | Mahima Paseda Kusumsiri</title>
+    <meta name="description" content="Learn essential abstract writing skills for academic and professional documents, including descriptive and informative abstracts, components, and writing guidelines.">
+    <meta name="keywords" content="abstract writing, academic writing, research abstracts, descriptive abstracts, informative abstracts, professional writing">
+    <meta name="author" content="Mahima Paseda Kusumsiri">
+    <link rel="canonical" href="https://mahimapaseda.com/topic-08-abstract-writing.html">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Topic-specific styles */
+        .topic-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(240, 147, 251, 0.1) 0%, transparent 50%);
+            animation: heroGlow 20s ease-in-out infinite;
+        }
+
+        .topic-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .topic-hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .topic-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .content-section {
+            margin-bottom: 60px;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .content-section h2 {
+            color: #1e293b;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .content-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+
+        .content-section h3 {
+            color: #334155;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .content-section h3 i {
+            color: #667eea;
+            font-size: 1.5rem;
+        }
+
+        .content-section p {
+            color: #64748b;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .content-section ul {
+            margin: 1.5rem 0;
+            padding-left: 0;
+        }
+
+        .content-section li {
+            color: #64748b;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .content-section li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-left: 4px solid #667eea;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        .highlight-box h4 {
+            color: #1e293b;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-box p {
+            color: #475569;
+            margin-bottom: 0;
+        }
+
+        .types-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .type-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .type-card:hover {
+            border-color: #667eea;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+        }
+
+        .type-card h4 {
+            color: #1e293b;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .type-card h4 i {
+            color: #667eea;
+        }
+
+        .type-card p {
+            color: #64748b;
+            margin-bottom: 1rem;
+        }
+
+        .type-card ul {
+            margin: 0;
+        }
+
+        .type-card li {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .steps-list {
+            counter-reset: step-counter;
+        }
+
+        .steps-list li {
+            counter-increment: step-counter;
+            padding-left: 3rem;
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .steps-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .learning-outcomes {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 60px;
+        }
+
+        .learning-outcomes h2 {
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .learning-outcomes h2::after {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .learning-outcomes ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .learning-outcomes li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .learning-outcomes li::before {
+            content: '🎯';
+            color: #fbbf24;
+        }
+
+        @media (max-width: 768px) {
+            .topic-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .topic-hero p {
+                font-size: 1.1rem;
+            }
+
+            .content-section {
+                padding: 30px 20px;
+            }
+
+            .content-section h2 {
+                font-size: 2rem;
+            }
+
+            .types-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .learning-outcomes ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">MPK</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ps-chapters.html" class="nav-link">PS Chapters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="topic-hero">
+        <div class="container">
+            <h1><i class="fas fa-file-alt"></i> Abstract Writing</h1>
+            <p>Master the art of writing effective abstracts for academic and professional documents</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="topic-content">
+        <!-- Definition Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-lightbulb"></i> What is Abstract Writing?</h2>
+            <p>Abstract writing means a condensed form of a longer piece of writing. There are two main types of abstract that serve different purposes in academic and professional communication.</p>
+            
+            <div class="highlight-box">
+                <h4><i class="fas fa-info-circle"></i> Key Purpose</h4>
+                <p>Abstracts provide readers with a brief synopsis of the entire work, allowing them to quickly understand the main points and decide whether to read the full document.</p>
+            </div>
+        </section>
+
+        <!-- Types of Abstracts -->
+        <section class="content-section">
+            <h2><i class="fas fa-list-alt"></i> Types of Abstracts</h2>
+            
+            <div class="types-grid">
+                <div class="type-card">
+                    <h4><i class="fas fa-book-open"></i> Descriptive Abstract</h4>
+                    <p>For publications in the humanities, social sciences, or psychology, descriptive abstracts are typically utilized. Usually, this kind of abstract is quite brief (between 50 and 100 words).</p>
+                    
+                    <h5>Essential Components:</h5>
+                    <ul>
+                        <li>Background</li>
+                        <li>Purpose</li>
+                        <li>Particular interest/focus of paper</li>
+                        <li>Overview of contents (not always included)</li>
+                    </ul>
+                </div>
+
+                <div class="type-card">
+                    <h4><i class="fas fa-microscope"></i> Informative Abstract</h4>
+                    <p>Generally speaking, publications in the fields of science, engineering, or psychology use informative abstracts. You have to sum up your report's main points in no more than 200 words.</p>
+                    
+                    <h5>Key Components:</h5>
+                    <ul>
+                        <li>Background</li>
+                        <li>Aim or purpose of research</li>
+                        <li>Method used</li>
+                        <li>Findings/results</li>
+                        <li>Conclusion</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Write Abstracts -->
+        <section class="content-section">
+            <h2><i class="fas fa-question-circle"></i> Why do we write abstracts?</h2>
+            <p>Abstracts are crucial components of research papers, reports, and even academic tasks. Usually written last, the abstract is the first thing readers see when they want a brief synopsis of the entire work.</p>
+            
+            <div class="highlight-box">
+                <h4><i class="fas fa-clock"></i> Timing is Key</h4>
+                <p>It is advised that you stop composing the abstract until the finish, as you'll have a better understanding of all your discoveries and conclusions.</p>
+            </div>
+        </section>
+
+        <!-- How to Write an Abstract -->
+        <section class="content-section">
+            <h2><i class="fas fa-pen-fancy"></i> How do I write an abstract?</h2>
+            
+            <ol class="steps-list">
+                <li>
+                    <strong>First re-read your paper/report for an overview.</strong> Then read each section and condense the information in each down to 1-2 sentences.
+                </li>
+                <li>
+                    <strong>Next read these sentences again</strong> to ensure that they cover the major points in your paper.
+                </li>
+                <li>
+                    <strong>Ensure you have written something</strong> for each of the key points outlined above for either the descriptive or informative abstract.
+                </li>
+                <li>
+                    <strong>Check the word length</strong> and further reduce your words if necessary by cutting out unnecessary words or rewriting some of the sentences into a single, more succinct sentence.
+                </li>
+                <li>
+                    <strong>Edit for flow and expression.</strong> Make sure your abstract reads smoothly and professionally.
+                </li>
+            </ol>
+        </section>
+
+        <!-- Learning Outcomes -->
+        <section class="learning-outcomes">
+            <h2><i class="fas fa-graduation-cap"></i> What I Learn</h2>
+            <ul>
+                <li>Purpose of abstracts in academic and professional writing</li>
+                <li>Descriptive abstracts and their components</li>
+                <li>Informative abstracts and their structure</li>
+                <li>Key components of effective abstracts</li>
+                <li>Writing abstracts last for better understanding</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mahima Paseda Kusumsiri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

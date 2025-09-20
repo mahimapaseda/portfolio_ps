@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01. Introduction to Professional Skills - PS Chapters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Topic Detail Page Styles */
+        .topic-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .topic-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .topic-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .topic-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .topic-content {
+            padding: 4rem 0;
+        }
+
+        .topic-section {
+            margin-bottom: 4rem;
+        }
+
+        .topic-section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .johari-section h2 {
+            color: #1e293b;
+        }
+
+        .topic-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .skill-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.15);
+        }
+
+        .skill-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .skill-card h5 {
+            color: #1e293b;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .skill-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .johari-section {
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+        }
+
+        .johari-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .johari-image {
+            text-align: center;
+        }
+
+        .johari-image img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .image-caption {
+            margin-top: 1rem;
+            font-style: italic;
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        .johari-benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .benefit-item i {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .benefit-item h6 {
+            color: #1e293b;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-item p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .back-to-topics {
+            text-align: center;
+            padding: 2rem 0;
+            background: #f8fafc;
+        }
+
+        .back-to-topics .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-topics .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .topic-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .johari-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">MPK</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ps-chapters.html" class="nav-link">PS Chapters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Topic Hero Section -->
+    <section class="topic-hero">
+        <div class="container">
+            <div class="topic-hero-content">
+                <h1>01. Introduction to Professional Skills</h1>
+                <p>
+                    Foundation module covering employability skills, workplace competencies, and the Johari Window framework for personal development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topic Content -->
+    <section class="topic-content">
+        <div class="container">
+            <!-- Core Employability Skills -->
+            <div class="topic-section">
+                <h2>Core Employability Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h5>Communication</h5>
+                        <p>Convey information effectively through various channels including verbal, written, and non-verbal communication.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5>Teamwork</h5>
+                        <p>Work effectively with others and support team goals while maintaining positive relationships.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h5>Problem-Solving</h5>
+                        <p>Analyze information and develop effective solutions to complex workplace challenges.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h5>Adaptability</h5>
+                        <p>Embrace change and adjust to different situations and environments effectively.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h5>Time Management</h5>
+                        <p>Organize and prioritize tasks to meet deadlines and achieve goals efficiently.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h5>Leadership</h5>
+                        <p>Guide and motivate others towards common goals while inspiring team members.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Johari Window Framework -->
+            <div class="johari-section">
+                <h2>The Johari Window Framework</h2>
+                <div class="johari-content">
+                    <div class="johari-image">
+                        <img src="img/Johari_window.png" alt="Johari Window Framework">
+                        <p class="image-caption"><em>Visual framework to understand conscious and unconscious biases</em></p>
+                    </div>
+                    <div class="johari-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-eye"></i>
+                            <div>
+                                <h6>Self-Awareness</h6>
+                                <p>Understand your strengths and blind spots to improve personal effectiveness</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h6>Personal Development</h6>
+                                <p>Identify areas for improvement and growth in professional settings</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <h6>Better Relationships</h6>
+                                <p>Build stronger workplace connections through improved understanding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Outcomes -->
+            <div class="topic-section">
+                <h2>Key Learning Outcomes</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <h5>Self-Improvement</h5>
+                        <p>Understand what skills to learn for increased productivity and career advancement.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h5>Continuous Learning</h5>
+                        <p>Seek opportunities to expand knowledge and skills through various learning methods.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h5>Error Correction</h5>
+                        <p>Identify and correct personal and professional weaknesses systematically.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Topics -->
+    <section class="back-to-topics">
+        <div class="container">
+            <a href="ps-chapters.html" class="btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to PS Topics
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mahima Paseda Kusumsiri. All rights reserved.</p>
+                <p>Professional Skills Development - Building Tomorrow's Leaders</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

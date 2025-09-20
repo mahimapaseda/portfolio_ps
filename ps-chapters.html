@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Skills (PS) Chapters - Mahima Paseda Kusumsiri</title>
+    <meta name="description" content="Explore comprehensive Professional Skills chapters covering CV writing, interview skills, negotiation, portfolio development, and more essential workplace competencies.">
+    <meta name="keywords" content="professional skills, soft skills, employability, career development, workplace skills, PS chapters">
+    <meta name="author" content="Mahima Paseda Kusumsiri">
+    <link rel="canonical" href="https://mahimapaseda.com/ps-chapters.html">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Modern PS Chapters Redesign */
+        .ps-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            padding: 140px 0 100px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .ps-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(240, 147, 251, 0.1) 0%, transparent 50%);
+            animation: heroGlow 20s ease-in-out infinite;
+        }
+
+        @keyframes heroGlow {
+            0%, 100% { opacity: 0.8; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        .ps-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .ps-hero h1 {
+            font-size: 4.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .ps-hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            opacity: 0.9;
+            line-height: 1.6;
+            font-weight: 400;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            display: block;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .ps-topics-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        .ps-topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 2rem;
+        }
+
+        .ps-topic-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            opacity: 0;
+            transform: translateY(40px);
+            backdrop-filter: blur(10px);
+        }
+        
+        .ps-topic-card.animate-ready {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        
+        .ps-topic-card.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .ps-topic-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.15);
+            border-color: rgba(102, 126, 234, 0.2);
+        }
+        
+        .ps-topic-card:focus {
+            outline: 3px solid #667eea;
+            outline-offset: 3px;
+        }
+
+        .ps-topic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .ps-topic-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .ps-topic-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .ps-topic-card:hover::after {
+            opacity: 1;
+        }
+
+        .ps-chapter-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .ps-chapter-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        /* Modern visual enhancements */
+        .ps-topics-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(102, 126, 234, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(118, 75, 162, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #1e293b 0%, #667eea 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .ps-topic-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            color: white;
+            font-size: 2rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ps-topic-icon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .ps-topic-card:hover .ps-topic-icon {
+            transform: scale(1.1) rotate(8deg);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .ps-topic-card:hover .ps-topic-icon::before {
+            opacity: 1;
+        }
+
+        .ps-topic-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            transition: color 0.3s ease;
+            line-height: 1.3;
+        }
+
+        .ps-topic-card:hover .ps-topic-title {
+            color: #667eea;
+        }
+
+        .ps-topic-description {
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            flex-grow: 1;
+            font-size: 1rem;
+        }
+
+        .ps-topic-arrow {
+            align-self: flex-end;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-top: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ps-topic-arrow::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .ps-topic-card:hover .ps-topic-arrow {
+            transform: translateX(8px) scale(1.15) rotate(10deg);
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .ps-topic-card:hover .ps-topic-arrow::before {
+            opacity: 1;
+        }
+
+        .ps-skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ps-skills-list li {
+            padding: 0.5rem 0;
+            color: #475569;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .ps-skills-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .ps-examples {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .ps-examples h4 {
+            color: #1e293b;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .ps-example-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            border-left: 3px solid #667eea;
+        }
+
+        .ps-example-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .ps-example-title {
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+
+        .ps-example-description {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .ps-importance {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            padding: 4rem 0;
+            margin: 4rem 0;
+        }
+
+        .ps-importance-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .ps-importance h2 {
+            font-size: 2.5rem;
+            color: #1e293b;
+            margin-bottom: 1.5rem;
+        }
+
+        .ps-importance p {
+            font-size: 1.1rem;
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .ps-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .ps-stat {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .ps-stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .ps-stat-label {
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        .ps-development {
+            padding: 4rem 0;
+        }
+
+        .ps-development-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .ps-development-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .ps-development-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ps-development-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .ps-development-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        .ps-development-description {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .back-to-home {
+            text-align: center;
+            padding: 2rem 0;
+            background: #f8fafc;
+        }
+
+        .back-to-home .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-home .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Redesigned Introduction Styles */
+        .intro-redesign {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border: 2px solid #667eea;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .intro-redesign::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+            animation: gradientShift 3s ease-in-out infinite;
+        }
+
+        .intro-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .intro-title-section {
+            flex: 1;
+        }
+
+        .intro-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .intro-overview {
+            margin-bottom: 3rem;
+        }
+
+        .overview-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            border-left: 5px solid #667eea;
+        }
+
+        .overview-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .overview-content h4 {
+            color: #1e293b;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .overview-content p {
+            color: #64748b;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .skills-showcase {
+            margin-bottom: 3rem;
+        }
+
+        .showcase-title {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .showcase-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.15);
+        }
+
+        .skill-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .skill-card h5 {
+            color: #1e293b;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .skill-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .skills-types {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .type-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .type-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .type-card.technical::before {
+            background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+        }
+
+        .type-card.soft::before {
+            background: linear-gradient(90deg, #f59e0b, #d97706);
+        }
+
+        .type-card.transferable::before {
+            background: linear-gradient(90deg, #10b981, #059669);
+        }
+
+        .type-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .type-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .type-header i {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .type-card.technical .type-header i {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        }
+
+        .type-card.soft .type-header i {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        .type-card.transferable .type-header i {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .type-header h5 {
+            color: #1e293b;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .type-card p {
+            color: #64748b;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .johari-section {
+            margin-bottom: 3rem;
+        }
+
+        .johari-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .johari-image {
+            text-align: center;
+        }
+
+        .image-caption {
+            margin-top: 1rem;
+            font-style: italic;
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        .johari-benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .benefit-item i {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .benefit-item h6 {
+            color: #1e293b;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-item p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .learning-outcomes {
+            margin-bottom: 2rem;
+        }
+
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .outcome-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .outcome-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .outcome-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .outcome-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .outcome-content h5 {
+            color: #1e293b;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .outcome-content p {
+            color: #64748b;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% {
+                background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+            }
+            33% {
+                background: linear-gradient(90deg, #764ba2, #f093fb, #667eea);
+            }
+            66% {
+                background: linear-gradient(90deg, #f093fb, #667eea, #764ba2);
+            }
+        }
+
+        /* Notification styles */
+        .topic-notification .notification-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+        }
+        
+        .topic-notification .notification-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        .topic-notification .notification-text h4 {
+            margin: 0 0 0.5rem 0;
+            color: #1e293b;
+            font-size: 1.1rem;
+        }
+        
+        .topic-notification .notification-text p {
+            margin: 0 0 0.3rem 0;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .topic-notification .notification-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #64748b;
+            cursor: pointer;
+            padding: 0;
+            margin-left: auto;
+        }
+
+        @media (max-width: 768px) {
+            .ps-hero {
+                padding: 120px 0 80px;
+                min-height: auto;
+            }
+
+            .ps-hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .ps-hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+                margin-top: 2rem;
+            }
+            
+            .ps-topics-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                max-width: 100%;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            
+            .ps-topic-card {
+                padding: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .search-container {
+                position: relative !important;
+                margin: 1.5rem auto 0 !important;
+                max-width: 350px !important;
+            }
+
+            .intro-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+            }
+
+            .overview-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .types-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .johari-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .outcomes-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .outcome-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .ps-importance h2 {
+                font-size: 2rem;
+            }
+            
+            .ps-stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            
+            .ps-development-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">MPK</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ps-chapters.html" class="nav-link">PS Chapters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <!-- PS Hero Section -->
+    <section class="ps-hero">
+        <div class="container">
+            <div class="ps-hero-content">
+                <h1>Professional Skills (PS) Chapters</h1>
+                <p>
+                    Master the essential soft skills and interpersonal abilities that drive career success. 
+                    From communication to leadership, these comprehensive chapters will transform your professional 
+                    capabilities and unlock new opportunities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PS Topics Grid -->
+    <section class="ps-topics-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Explore Professional Skills</h2>
+                <p class="section-subtitle">Choose a topic to begin your professional development journey</p>
+            </div>
+            <div class="ps-topics-grid" id="topicsGrid">
+                <!-- Topic 01: Introduction to Professional Skills -->
+                <div class="ps-topic-card" onclick="openTopic('01')" data-topic="introduction professional skills">
+                    <div class="ps-topic-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="ps-topic-title">01. Introduction to Professional Skills</h3>
+                    <p class="ps-topic-description">
+                        Foundation module covering employability skills, workplace competencies, and the Johari Window framework.
+                    </p>
+                    <div class="ps-topic-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Topic 02: CV and Cover Letter Writing -->
+                <div class="ps-topic-card" onclick="openTopic('02')" data-topic="cv cover letter writing resume">
+                    <div class="ps-topic-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="ps-topic-title">02. CV and Cover Letter Writing</h3>
+                    <p class="ps-topic-description">
+                        Master the art of creating compelling CVs and cover letters that effectively showcase your qualifications.
+                    </p>
+                    <div class="ps-topic-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Topic 03: Interview Skills -->
+                <div class="ps-topic-card" onclick="openTopic('03')" data-topic="interview skills communication presentation">
+                    <div class="ps-topic-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="ps-topic-title">03. Interview Skills</h3>
+                    <p class="ps-topic-description">
+                        Develop confidence and competence in various interview formats and presentation techniques.
+                    </p>
+                    <div class="ps-topic-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Topic 04: Negotiation Skills -->
+                <div class="ps-topic-card" onclick="openTopic('04')" data-topic="negotiation skills business deals salary">
+                    <div class="ps-topic-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="ps-topic-title">04. Negotiation Skills</h3>
+                    <p class="ps-topic-description">
+                        Learn effective negotiation strategies for salary discussions and workplace conflicts.
+                    </p>
+                    <div class="ps-topic-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Topic 05: Portfolio Writing -->
+                <div class="ps-topic-card" onclick="openTopic('05')" data-topic="portfolio writing professional showcase">
+                    <div class="ps-topic-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="ps-topic-title">05. Portfolio Writing</h3>
+                    <p class="ps-topic-description">
+                        Create compelling professional portfolios that showcase your work and achievements.
+                    </p>
+                    <div class="ps-topic-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Topic 06: Telephone Etiquettes -->
+                <div class="ps-topic-card" onclick="openTopic('06')" data-topic="telephone etiquettes phone communication">
+                    <div class="ps-topic-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="ps-topic-title">06. Telephone Etiquettes</h3>
+                    <p class="ps-topic-description">
+                        Master professional telephone communication skills for business calls and client interactions.
+                    </p>
+                    <div class="ps-topic-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Topic 07: Email Etiquettes -->
+                <div class="ps-topic-card" onclick="openTopic('07')" data-topic="email etiquettes business correspondence">
+                    <div class="ps-topic-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="ps-topic-title">07. Email Etiquettes</h3>
+                    <p class="ps-topic-description">
+                        Learn professional email communication standards and best practices for business correspondence.
+                    </p>
+                    <div class="ps-topic-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Topic 08: Abstract Writing -->
+                <div class="ps-topic-card" onclick="openTopic('08')" data-topic="abstract writing research summary">
+                    <div class="ps-topic-icon">
+                        <i class="fas fa-file-text"></i>
+                    </div>
+                    <h3 class="ps-topic-title">08. Abstract Writing</h3>
+                    <p class="ps-topic-description">
+                        Develop skills in writing concise, informative abstracts for reports and research papers.
+                    </p>
+                    <div class="ps-topic-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Topic 09: Project Proposal Writing -->
+                <div class="ps-topic-card" onclick="openTopic('09')" data-topic="project proposal writing business plan">
+                    <div class="ps-topic-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="ps-topic-title">09. Project Proposal Writing</h3>
+                    <p class="ps-topic-description">
+                        Master the art of writing compelling project proposals with clear objectives and methodology.
+                    </p>
+                    <div class="ps-topic-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Topic 10: Meetings -->
+                <div class="ps-topic-card" onclick="openTopic('10')" data-topic="meetings management collaboration">
+                    <div class="ps-topic-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="ps-topic-title">10. Meetings</h3>
+                    <p class="ps-topic-description">
+                        Learn effective meeting management skills from planning to follow-up and action item tracking.
+                    </p>
+                    <div class="ps-topic-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Topic 11: Food Festival -->
+                <div class="ps-topic-card" onclick="openTopic('11')" data-topic="food festival event management organization planning team coordination">
+                    <div class="ps-topic-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="ps-topic-title">11. Food Festival</h3>
+                    <p class="ps-topic-description">
+                        Comprehensive guide to organizing and executing successful food festival events with team coordination, planning, and management.
+                    </p>
+                    <div class="ps-topic-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Topic 12: Emotional Intelligence -->
+                <div class="ps-topic-card" onclick="openTopic('12')" data-topic="emotional intelligence empathy self-awareness">
+                    <div class="ps-topic-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="ps-topic-title">12. Emotional Intelligence</h3>
+                    <p class="ps-topic-description">
+                        Develop emotional intelligence skills including self-awareness, empathy, and emotional regulation.
+                    </p>
+                    <div class="ps-topic-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Topic 13: Dining Etiquettes -->
+                <div class="ps-topic-card" onclick="openTopic('13')" data-topic="dining etiquettes business meals formal">
+                    <div class="ps-topic-icon">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <h3 class="ps-topic-title">13. Dining Etiquettes</h3>
+                    <p class="ps-topic-description">
+                        Master professional dining etiquette for business meals, client dinners, and formal occasions.
+                    </p>
+                    <div class="ps-topic-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Back to Home -->
+    <section class="back-to-home">
+        <div class="container">
+            <a href="index.html" class="btn">
+                <i class="fas fa-home"></i>
+                Back to Portfolio
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mahima Paseda Kusumsiri. All rights reserved.</p>
+                <p>Professional Skills Development - Building Tomorrow's Leaders</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Optimized topic navigation function
+        function openTopic(topicId) {
+            // Available topic pages mapping
+            const availableTopics = {
+                '01': 'topic-01-introduction.html',
+                '02': 'topic-02-cv-cover-letter.html',
+                '03': 'topic-03-interview-skills.html',
+                '04': 'topic-04-negotiation-skills.html',
+                '05': 'topic-05-portfolio-writing.html',
+                '06': 'topic-06-telephone-etiquettes.html',
+                '07': 'topic-07-email-etiquettes.html',
+                '08': 'topic-08-abstract-writing.html',
+                '09': 'topic-09-project-proposal-writing.html',
+                '10': 'topic-10-meetings.html',
+                '11': 'topic-11-food-festival.html',
+                '12': 'topic-12-emotional-intelligence.html',
+                '13': 'topic-13-dining-etiquettes.html'
+            };
+            
+            // All topic pages mapping for future reference
+            const allTopicPages = {
+                '01': 'topic-01-introduction.html',
+                '02': 'topic-02-cv-cover-letter.html',
+                '03': 'topic-03-interview-skills.html',
+                '04': 'topic-04-negotiation-skills.html',
+                '05': 'topic-05-portfolio-writing.html',
+                '06': 'topic-06-telephone-etiquettes.html',
+                '07': 'topic-07-email-etiquettes.html',
+                '08': 'topic-08-abstract-writing.html',
+                '09': 'topic-09-project-proposal-writing.html',
+                '10': 'topic-10-meetings.html',
+                '11': 'topic-11-food-festival.html',
+                '12': 'topic-12-emotional-intelligence.html',
+                '13': 'topic-13-dining-etiquettes.html'
+            };
+            
+            const topicPage = availableTopics[topicId];
+            if (topicPage) {
+                // Add loading state
+                const clickedCard = document.querySelector(`[onclick="openTopic('${topicId}')"]`);
+                if (clickedCard) {
+                    clickedCard.style.opacity = '0.7';
+                    clickedCard.style.transform = 'scale(0.98)';
+                }
+                
+                // Navigate to the topic page
+                setTimeout(() => {
+                    window.location.href = topicPage;
+                }, 150);
+                } else {
+                // Show enhanced notification for unavailable topics
+                showTopicNotification(topicId);
+            }
+        }
+        
+        // Enhanced notification system
+        function showTopicNotification(topicId) {
+            const topicNames = {};
+            
+            const topicName = topicNames[topicId] || `Topic ${topicId}`;
+            
+            // Create custom notification
+            const notification = document.createElement('div');
+            notification.className = 'topic-notification';
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <div class="notification-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="notification-text">
+                        <h4>Coming Soon!</h4>
+                        <p><strong>${topicName}</strong> detailed page is currently under development.</p>
+                        <p>Available now: Topics 01-13</p>
+                    </div>
+                    <button class="notification-close">&times;</button>
+                </div>
+            `;
+            
+            // Add notification styles
+            notification.style.cssText = `
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: white;
+                border-radius: 16px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                z-index: 10000;
+                max-width: 400px;
+                width: 90%;
+                opacity: 0;
+                transition: all 0.3s ease;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.style.opacity = '1';
+            }, 100);
+            
+            // Close functionality
+            const closeBtn = notification.querySelector('.notification-close');
+            closeBtn.addEventListener('click', () => {
+                notification.style.opacity = '0';
+                setTimeout(() => notification.remove(), 300);
+            });
+            
+            // Auto close after 4 seconds
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.style.opacity = '0';
+                    setTimeout(() => notification.remove(), 300);
+                }
+            }, 4000);
+        }
+
+        // Enhanced topic cards functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const topicCards = document.querySelectorAll('.ps-topic-card');
+            
+            // Add enhanced interactions to topic cards
+            topicCards.forEach(card => {
+                // Add hover effects
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                    this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                    this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+                });
+                
+                // Add click animation with improved feedback
+                card.addEventListener('click', function(e) {
+                    // Don't prevent default - let the onclick handler work
+                    // e.preventDefault();
+                    
+                    // Enhanced click animation
+                    this.style.transform = 'scale(0.95)';
+                    this.style.transition = 'all 0.1s ease';
+                    
+                    setTimeout(() => {
+                        this.style.transform = 'translateY(-8px) scale(1.02)';
+                        this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+                    }, 100);
+                });
+                
+                // Add keyboard accessibility
+                card.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+                
+                // Make cards focusable
+                card.setAttribute('tabindex', '0');
+                card.setAttribute('role', 'button');
+            });
+            
+            // Add intersection observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('animate-in');
+                        }, index * 100);
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe topic cards for animation
+            topicCards.forEach(card => {
+                card.classList.add('animate-ready');
+                observer.observe(card);
+            });
+            
+            // Add scroll progress indicator
+            addScrollProgress();
+            
+            // Add search functionality
+            addSearchFunctionality();
+        });
+        
+        // Scroll progress indicator
+        function addScrollProgress() {
+            const progressBar = document.createElement('div');
+            progressBar.className = 'scroll-progress';
+            progressBar.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 3px;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                z-index: 10001;
+                transition: width 0.1s ease;
+            `;
+            document.body.appendChild(progressBar);
+            
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset;
+                const docHeight = document.body.scrollHeight - window.innerHeight;
+                const scrollPercent = (scrollTop / docHeight) * 100;
+                progressBar.style.width = scrollPercent + '%';
+            });
+        }
+        
+        // Search functionality
+        function addSearchFunctionality() {
+            const searchContainer = document.createElement('div');
+            searchContainer.className = 'search-container';
+            searchContainer.innerHTML = `
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search PS topics..." id="topicSearch">
+                    <button class="search-clear" id="searchClear" style="display: none;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            `;
+            
+            // Add search styles for hero section placement
+            searchContainer.style.cssText = `
+                position: relative;
+                margin: 2rem auto 0;
+                max-width: 400px;
+                width: 100%;
+            `;
+            
+            const searchBox = searchContainer.querySelector('.search-box');
+            searchBox.style.cssText = `
+                position: relative;
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(10px);
+                border-radius: 25px;
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            `;
+            
+            const searchInput = searchContainer.querySelector('#topicSearch');
+            searchInput.style.cssText = `
+                width: 100%;
+                padding: 16px 50px 16px 50px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                background: transparent;
+                color: #1e293b;
+                font-weight: 500;
+            `;
+            
+            const searchIcon = searchContainer.querySelector('.fa-search');
+            searchIcon.style.cssText = `
+                position: absolute;
+                left: 18px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #667eea;
+                font-size: 16px;
+                z-index: 1;
+            `;
+            
+            const clearBtn = searchContainer.querySelector('#searchClear');
+            clearBtn.style.cssText = `
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: none;
+                border: none;
+                color: #64748b;
+                cursor: pointer;
+                padding: 8px;
+                border-radius: 50%;
+                transition: all 0.3s ease;
+                z-index: 1;
+            `;
+            
+            // Append search to hero content
+            const heroContent = document.querySelector('.ps-hero-content');
+            if (heroContent) {
+                heroContent.appendChild(searchContainer);
+            } else {
+                document.body.appendChild(searchContainer);
+            }
+            
+            // Search functionality
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                const topicCards = document.querySelectorAll('.ps-topic-card');
+                
+                if (searchTerm.length > 0) {
+                    clearBtn.style.display = 'block';
+                } else {
+                    clearBtn.style.display = 'none';
+                }
+                
+                topicCards.forEach(card => {
+                    const title = card.querySelector('.ps-topic-title').textContent.toLowerCase();
+                    const description = card.querySelector('.ps-topic-description').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                        card.style.display = 'flex';
+                        card.style.opacity = '1';
+                    } else {
+                        card.style.display = 'none';
+                        card.style.opacity = '0';
+                    }
+                });
+            });
+            
+            // Clear search
+            clearBtn.addEventListener('click', function() {
+                searchInput.value = '';
+                this.style.display = 'none';
+                
+                const topicCards = document.querySelectorAll('.ps-topic-card');
+                topicCards.forEach(card => {
+                    card.style.display = 'flex';
+                    card.style.opacity = '1';
+                });
+            });
+            
+            // Add hover effect for clear button
+            clearBtn.addEventListener('mouseenter', function() {
+                this.style.background = 'rgba(102, 126, 234, 0.1)';
+                this.style.color = '#667eea';
+            });
+            
+            clearBtn.addEventListener('mouseleave', function() {
+                this.style.background = 'none';
+                this.style.color = '#64748b';
+            });
+        }
+    </script>
+</body>
+</html>

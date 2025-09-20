@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahima Paseda Kusumsiri - Full-Stack Developer & Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">MPK</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ps-chapters.html" class="nav-link">PS Chapters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Tech Background Animations -->
+        <div class="tech-background">
+            <!-- Animated Code Snippets -->
+            <div class="code-snippets">
+                <div class="code-snippet" data-code="&lt;div&gt;Hello World&lt;/div&gt;"></div>
+                <div class="code-snippet" data-code="function create() { return 'awesome'; }"></div>
+                <div class="code-snippet" data-code="const tech = ['JS', 'CSS', 'HTML'];"></div>
+                <div class="code-snippet" data-code="import React from 'react';"></div>
+                <div class="code-snippet" data-code="SELECT * FROM projects;"></div>
+                <div class="code-snippet" data-code="npm install creativity"></div>
+            </div>
+            
+            <!-- Circuit Board Pattern -->
+            <div class="circuit-board">
+                <svg class="circuit-svg" viewBox="0 0 400 300">
+                    <defs>
+                        <pattern id="circuitPattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                            <path d="M10,10 L90,10 L90,90 L10,90 Z" fill="none" stroke="rgba(102, 126, 234, 0.3)" stroke-width="1"/>
+                            <circle cx="20" cy="20" r="2" fill="rgba(102, 126, 234, 0.6)"/>
+                            <circle cx="80" cy="20" r="2" fill="rgba(118, 75, 162, 0.6)"/>
+                            <circle cx="20" cy="80" r="2" fill="rgba(118, 75, 162, 0.6)"/>
+                            <circle cx="80" cy="80" r="2" fill="rgba(102, 126, 234, 0.6)"/>
+                            <path d="M20,20 L80,20 M20,80 L80,80 M20,20 L20,80 M80,20 L80,80" stroke="rgba(102, 126, 234, 0.4)" stroke-width="0.5"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#circuitPattern)"/>
+                </svg>
+            </div>
+            
+            <!-- Binary Code Rain -->
+            <div class="binary-rain">
+                <div class="binary-column"></div>
+                <div class="binary-column"></div>
+                <div class="binary-column"></div>
+                <div class="binary-column"></div>
+                <div class="binary-column"></div>
+                <div class="binary-column"></div>
+                <div class="binary-column"></div>
+                <div class="binary-column"></div>
+            </div>
+            
+            <!-- Floating Tech Icons -->
+            <div class="floating-tech-icons">
+                <div class="tech-icon"><i class="fab fa-html5"></i></div>
+                <div class="tech-icon"><i class="fab fa-css3-alt"></i></div>
+                <div class="tech-icon"><i class="fab fa-js-square"></i></div>
+                <div class="tech-icon"><i class="fab fa-react"></i></div>
+                <div class="tech-icon"><i class="fab fa-node-js"></i></div>
+                <div class="tech-icon"><i class="fab fa-python"></i></div>
+                <div class="tech-icon"><i class="fab fa-java"></i></div>
+                <div class="tech-icon"><i class="fas fa-database"></i></div>
+                <div class="tech-icon"><i class="fab fa-git-alt"></i></div>
+                <div class="tech-icon"><i class="fas fa-code"></i></div>
+            </div>
+            
+            <!-- Animated Grid Lines -->
+            <div class="tech-grid">
+                <div class="grid-line horizontal"></div>
+                <div class="grid-line horizontal"></div>
+                <div class="grid-line horizontal"></div>
+                <div class="grid-line horizontal"></div>
+                <div class="grid-line vertical"></div>
+                <div class="grid-line vertical"></div>
+                <div class="grid-line vertical"></div>
+                <div class="grid-line vertical"></div>
+            </div>
+            
+            <!-- Data Flow Lines -->
+            <div class="data-flow">
+                <div class="flow-line"></div>
+                <div class="flow-line"></div>
+                <div class="flow-line"></div>
+                <div class="flow-line"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Mahima Paseda Kusumsiri</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Full-Stack Developer & Software Engineer</h2>
+                    <p class="hero-description">
+                        A passionate Full-Stack Developer with expertise in modern web technologies, backend development, and database management. 
+                        Currently pursuing Computer Science at SLIIT City UNI while building scalable web applications and innovative software solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="img/Profile.png" alt="Mahima Paseda Kusumsiri" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about technology and leadership</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        As a passionate Full-Stack Developer, I bring a unique combination of technical expertise, 
+                        problem-solving skills, and innovative thinking to every project I undertake. With strong foundation 
+                        in both frontend and backend technologies, I specialize in building scalable web applications, 
+                        RESTful APIs, and modern software solutions that drive business growth.
+                    </p>
+                    <p>
+                        Currently working as a Web Developer at Delta Gemunupura College and pursuing my Computer Science degree 
+                        at SLIIT City UNI (2023-2027), I am continuously expanding my expertise in full-stack development, 
+                        cloud technologies, and modern software engineering practices while delivering high-quality solutions.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p>Web Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>8+</h3>
+                            <p>Programming Languages</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>3+</h3>
+                            <p>Years Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Technical and leadership capabilities</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-sass"></i>
+                            <span>SASS/SCSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Backend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>RESTful APIs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Development Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git & GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Version Control</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bug"></i>
+                            <span>Debugging</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud Deployment</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Agile Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-android"></i>
+                            <span>Kotlin</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C/C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-code"></i>
+                            <span>JSON/XML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PS Chapters Section -->
+    <section id="ps-chapters" class="ps-chapters">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Skills(PS) Chapters</h2>
+                <p class="section-subtitle">Essential skills for professional success</p>
+            </div>
+            <div class="ps-content">
+                <div class="ps-description">
+                    <p>
+                        Professional Skills, also known as soft skills or employability skills, are the non-technical, 
+                        interpersonal abilities that are essential for success in the workplace. These skills complement 
+                        technical expertise and play a crucial role in career advancement, team collaboration, and 
+                        overall professional effectiveness.
+                    </p>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="ps-chapters.html" class="btn btn-primary">
+                            <i class="fas fa-book-open"></i>
+                            Explore PS Chapters
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Recent work and achievements</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript. 
+                            Features advanced animations, interactive elements, and mobile-first design principles.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Student Management System</h3>
+                        <p class="project-description">
+                            Full-stack web application for managing student records, grades, and academic information. 
+                            Built with modern web technologies and responsive design for educational institutions.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fab fa-android"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Android Mobile App</h3>
+                        <p class="project-description">
+                            Native Android application developed using Java and Kotlin. 
+                            Features modern UI/UX design, local database integration, and RESTful API connectivity.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Android Studio</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Play Store
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">Career journey and achievements</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Full-Stack Web Developer</h3>
+                            <span class="timeline-company">Delta Gemunupura College</span>
+                            <span class="timeline-date">August 2024 - Present</span>
+                        </div>
+                        <p class="timeline-description">
+                            Developing and maintaining full-stack web applications for educational institution. 
+                            Working with modern web technologies, databases, and ensuring optimal user experience 
+                            for students and staff through innovative software solutions.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Developed responsive web applications using HTML5, CSS3, JavaScript</li>
+                            <li>Implemented backend solutions with Java and database management</li>
+                            <li>Created mobile-responsive designs and cross-platform compatibility</li>
+                            <li>Collaborated with stakeholders to gather requirements and deliver solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Digital Content Manager & Social Media Manager</h3>
+                            <span class="timeline-company">Delta Gemunupura College</span>
+                            <span class="timeline-date">May 2020 - Present</span>
+                        </div>
+                        <p class="timeline-description">
+                            Managing digital content creation, social media presence, and online platforms for educational institution. 
+                            Combining technical skills with creative content development to enhance institutional branding 
+                            and digital engagement strategies.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Developed and maintained institution's digital presence</li>
+                            <li>Created engaging multimedia content using video editing and design tools</li>
+                            <li>Implemented data-driven social media strategies and analytics</li>
+                            <li>Managed cross-platform content distribution and brand consistency</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Freelance Developer & Multimedia Professional</h3>
+                            <span class="timeline-company">Self-employed</span>
+                            <span class="timeline-date">2019 - Present</span>
+                        </div>
+                        <p class="timeline-description">
+                            Independent software developer and multimedia professional specializing in web development, 
+                            mobile app development, videography, and content creation. Providing technical solutions 
+                            and creative services for various clients and projects.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Developed multiple web applications and mobile apps</li>
+                            <li>Created 100+ multimedia projects and technical solutions</li>
+                            <li>Established successful YouTube channel with technical content</li>
+                            <li>Specialized in full-stack development and creative storytelling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic journey and achievements</p>
+            </div>
+            <div class="education-grid">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-title">Bachelor's Degree in Computer Science</h3>
+                        <h4 class="education-institution">SLIIT City UNI</h4>
+                        <span class="education-date">2023 - 2027</span>
+                        <p class="education-description">
+                            Currently pursuing a degree in Computer Science to deepen technical knowledge 
+                            and expand expertise in modern software development and multimedia technologies.
+                        </p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-title">Advanced Level Education</h3>
+                        <h4 class="education-institution">Delta Gemunupura College Kothmale</h4>
+                        <span class="education-date">May 2019 - January 2022</span>
+                        <p class="education-description">
+                            Completed Advanced Level education with focus on technical subjects 
+                            and multimedia studies, laying foundation for career in technology.
+                        </p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-title">Ordinary Level Education</h3>
+                        <h4 class="education-institution">Harangala National School</h4>
+                        <span class="education-date">January 2013 - May 2019</span>
+                        <p class="education-description">
+                            Completed Ordinary Level education with strong foundation in 
+                            mathematics, science, and technology subjects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>mahimapasedakusumsiri@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+94 77 011 4407</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Principal Quarter, Delta Gamunupura Maha Vidyalaya, Pussellawa, Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mahimapaseda/" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/@mahimapaseda" class="social-link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/mahi_pase_2002?igsh=MW5seDNvaTUyaWo1cg==" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1Cybqo7KWn/" class="social-link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mahima Paseda Kusumsiri. All rights reserved.</p>
+                <p>Built with passion and modern web technologies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget" id="aiChatWidget">
+        <div class="chat-header">
+            <div class="chat-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="chat-info">
+                <h4>Mahi AI</h4>
+                <span class="chat-status">Online</span>
+            </div>
+            <button class="chat-close" id="chatClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message ai-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hello! I'm Mahima's portfolio AI assistant. I can help you learn more about Mahima's work, answer questions about his skills, or assist with any inquiries about his portfolio. How can I help you today?</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input-container">
+            <div class="chat-input-wrapper">
+                <input type="text" id="chatInput" placeholder="Ask me anything about Mahima's work..." maxlength="500">
+                <button id="chatSend" class="chat-send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="chat-suggestions">
+                <button class="suggestion-btn" data-message="Tell me about Mahima's skills">Skills</button>
+                <button class="suggestion-btn" data-message="What are PS Chapters?">PS Chapters</button>
+                <button class="suggestion-btn" data-message="What projects has he worked on?">Projects</button>
+                <button class="suggestion-btn" data-message="How can I contact him?">Contact</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chat Toggle Button -->
+    <button class="ai-chat-toggle" id="aiChatToggle">
+        <i class="fas fa-comments"></i>
+        <span class="chat-notification" id="chatNotification">1</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

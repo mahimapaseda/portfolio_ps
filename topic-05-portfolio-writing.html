@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05. Portfolio Writing - PS Chapters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Topic Detail Page Styles */
+        .topic-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .topic-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .topic-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .topic-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .topic-content {
+            padding: 4rem 0;
+        }
+
+        .topic-section {
+            margin-bottom: 4rem;
+        }
+
+        .topic-section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .topic-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .skill-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.15);
+        }
+
+        .skill-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .skill-card h5 {
+            color: #1e293b;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .skill-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .portfolio-definition {
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .portfolio-definition h3 {
+            color: #1e293b;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .portfolio-definition p {
+            color: #64748b;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .uses-section {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .uses-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .use-tips {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .tip-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .tip-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .tip-item i {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .tip-item h6 {
+            color: #1e293b;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .tip-item p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .types-section {
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+        }
+
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .type-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .type-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        .type-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .type-card h5 {
+            color: #1e293b;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .type-card p {
+            color: #64748b;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .components-section {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .components-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .component-card {
+            background: #f0f9ff;
+            border: 2px solid #bae6fd;
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .component-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+        }
+
+        .component-icon {
+            width: 50px;
+            height: 50px;
+            background: #3b82f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .component-card h6 {
+            color: #1e40af;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .component-card p {
+            color: #1e3a8a;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .back-to-topics {
+            text-align: center;
+            padding: 2rem 0;
+            background: #f8fafc;
+        }
+
+        .back-to-topics .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-topics .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .topic-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .uses-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .types-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .components-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">MPK</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ps-chapters.html" class="nav-link">PS Chapters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Topic Hero Section -->
+    <section class="topic-hero">
+        <div class="container">
+            <div class="topic-hero-content">
+                <h1>05. Portfolio Writing</h1>
+                <p>
+                    Create compelling professional portfolios that showcase your work and achievements. 
+                    Learn to compile and structure materials that exemplify your skills, qualifications, and experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topic Content -->
+    <section class="topic-content">
+        <div class="container">
+            <!-- What is a Portfolio -->
+            <div class="portfolio-definition">
+                <h3>What is a Portfolio?</h3>
+                <p>
+                    A portfolio is a compilation of academic and professional materials that exemplifies your beliefs, 
+                    skills, qualifications, education, training, and experiences. It provides insight into your 
+                    personality and work ethic, serving as a comprehensive representation of your professional journey.
+                </p>
+            </div>
+
+            <!-- Uses of a Portfolio -->
+            <div class="topic-section">
+                <h2>Uses of a Portfolio</h2>
+                <div class="uses-section">
+                    <div class="uses-content">
+                        <div class="use-tips">
+                            <div class="tip-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <h6>Freelancing and Consulting</h6>
+                                    <p>Showcase your capabilities to potential clients and demonstrate your expertise in specific areas.</p>
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <h6>Professional Development</h6>
+                                    <p>Track your growth, set career goals, and identify areas for skill enhancement and learning.</p>
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-star"></i>
+                                <div>
+                                    <h6>Performance Evaluation</h6>
+                                    <p>Provide concrete evidence of your achievements and contributions for performance reviews.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="use-tips">
+                            <div class="tip-item">
+                                <i class="fas fa-tools"></i>
+                                <div>
+                                    <h6>Skill Demonstrations</h6>
+                                    <p>Present tangible examples of your technical abilities, creative work, and problem-solving skills.</p>
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-certificate"></i>
+                                <div>
+                                    <h6>Evidence of Competence</h6>
+                                    <p>Provide documented proof of your qualifications, certifications, and professional achievements.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Types of Portfolios -->
+            <div class="topic-section">
+                <h2>Types of Portfolios</h2>
+                <div class="types-section">
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <div class="type-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h5>Personal Portfolio</h5>
+                            <p>A comprehensive collection showcasing your personal brand, interests, and individual achievements across various areas.</p>
+                        </div>
+                        <div class="type-card">
+                            <div class="type-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h5>Career/Dossier Portfolio</h5>
+                            <p>Professional documentation of your career progression, including resumes, cover letters, and career-related materials.</p>
+                        </div>
+                        <div class="type-card">
+                            <div class="type-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h5>Employment Portfolio</h5>
+                            <p>Work-focused collection demonstrating job-related skills, projects, and accomplishments for employment opportunities.</p>
+                        </div>
+                        <div class="type-card">
+                            <div class="type-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h5>Assessment Portfolio</h5>
+                            <p>Academic or professional evaluation tool showcasing learning outcomes, competencies, and educational achievements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Components -->
+            <div class="topic-section">
+                <h2>Key Portfolio Components</h2>
+                <div class="components-section">
+                    <div class="components-grid">
+                        <div class="component-card">
+                            <div class="component-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h6>Beliefs and Values</h6>
+                            <p>Personal philosophy, work ethics, and core values that guide your professional decisions and actions.</p>
+                        </div>
+                        <div class="component-card">
+                            <div class="component-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h6>Skills and Abilities</h6>
+                            <p>Technical skills, soft skills, and competencies demonstrated through projects, certifications, and experiences.</p>
+                        </div>
+                        <div class="component-card">
+                            <div class="component-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h6>Qualifications and Education</h6>
+                            <p>Academic credentials, professional certifications, training programs, and educational achievements.</p>
+                        </div>
+                        <div class="component-card">
+                            <div class="component-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h6>Training and Development</h6>
+                            <p>Continuous learning initiatives, professional development activities, and skill enhancement programs.</p>
+                        </div>
+                        <div class="component-card">
+                            <div class="component-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h6>Professional Experiences</h6>
+                            <p>Work history, project outcomes, leadership roles, and significant professional accomplishments.</p>
+                        </div>
+                        <div class="component-card">
+                            <div class="component-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h6>Creative Work</h6>
+                            <p>Innovative projects, creative solutions, design work, and original contributions to your field.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Learning Outcomes -->
+            <div class="topic-section">
+                <h2>Key Learning Outcomes</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h5>Purpose of a Portfolio</h5>
+                        <p>Understand the fundamental purpose and value of creating a professional portfolio for career advancement.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h5>Types of Portfolios</h5>
+                        <p>Learn to identify and create different types of portfolios based on specific professional needs and goals.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h5>Uses of a Portfolio</h5>
+                        <p>Master the various applications of portfolios in freelancing, consulting, and professional development.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-folder-plus"></i>
+                        </div>
+                        <h5>Compiling Materials</h5>
+                        <p>Develop skills in gathering, organizing, and selecting appropriate materials for portfolio inclusion.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <h5>Portfolio Structuring</h5>
+                        <p>Learn to organize and structure portfolio content for maximum impact and professional presentation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Topics -->
+    <section class="back-to-topics">
+        <div class="container">
+            <a href="ps-chapters.html" class="btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to PS Topics
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mahima Paseda Kusumsiri. All rights reserved.</p>
+                <p>Professional Skills Development - Building Tomorrow's Leaders</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

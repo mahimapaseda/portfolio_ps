@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12. Emotional Intelligence - Professional Skills | Mahima Paseda Kusumsiri</title>
+    <meta name="description" content="Learn essential emotional intelligence skills for professional development, including self-awareness, empathy, social skills, and leadership capabilities.">
+    <meta name="keywords" content="emotional intelligence, self-awareness, empathy, social skills, leadership, professional development, workplace skills">
+    <meta name="author" content="Mahima Paseda Kusumsiri">
+    <link rel="canonical" href="https://mahimapaseda.com/topic-12-emotional-intelligence.html">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Topic-specific styles */
+        .topic-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(240, 147, 251, 0.1) 0%, transparent 50%);
+            animation: heroGlow 20s ease-in-out infinite;
+        }
+
+        @keyframes heroGlow {
+            0%, 100% { opacity: 0.8; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        .topic-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .topic-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .topic-hero .topic-number {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .topic-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .topic-content {
+            background: #f8fafc;
+            padding: 4rem 0;
+        }
+
+        .topic-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .content-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
+        }
+
+        .content-card h3 {
+            color: #1e293b;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .content-card h3 i {
+            color: #667eea;
+            font-size: 1.2rem;
+        }
+
+        .content-card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .content-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content-card li {
+            color: #64748b;
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .content-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: #1e293b;
+            font-weight: 500;
+        }
+
+        .quote-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .quote-box::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: rgba(255, 255, 255, 0.3);
+            font-family: serif;
+        }
+
+        .quote-box p {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .quote-box .attribution {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .learning-outcomes {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 3rem;
+        }
+
+        .learning-outcomes h2 {
+            text-align: center;
+            color: #1e293b;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .learning-outcomes h2 i {
+            color: #667eea;
+        }
+
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .outcome-item {
+            text-align: center;
+            padding: 2rem;
+            background: #f8fafc;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .outcome-item:hover {
+            transform: translateY(-5px);
+            background: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .outcome-item i {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .outcome-item h4 {
+            color: #1e293b;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .outcome-item p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .back-to-chapters {
+            background: #f8fafc;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .back-to-chapters .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .back-to-chapters .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .topic-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .topic-hero p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .content-card {
+                padding: 2rem;
+            }
+
+            .outcomes-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .topic-section {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">MPK</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ps-chapters.html" class="nav-link">PS Chapters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Topic Hero Section -->
+    <section class="topic-hero">
+        <div class="topic-hero-content">
+            <div class="topic-number">Lesson 12</div>
+            <h1>Emotional Intelligence</h1>
+            <p>Develop your emotional intelligence skills to enhance self-awareness, empathy, and leadership capabilities. Learn to understand and manage emotions effectively in professional settings.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="topic-content">
+        <!-- Definition Section -->
+        <section class="topic-section">
+            <div class="section-header">
+                <h2 class="section-title">What is Emotional Intelligence?</h2>
+                <p class="section-subtitle">Understanding the foundation of emotional intelligence</p>
+            </div>
+            <div class="content-card">
+                <p>Emotional Intelligence is the "ability to monitor one's own and other people's emotions, to discriminate between different emotions and label them appropriately, and to use emotional information to guide thinking and behavior".</p>
+                
+                <div class="highlight-box">
+                    <p>
+                        <strong>Key Point:</strong> Emotional Intelligence involves four core abilities: perceiving emotions, understanding emotional meanings, using emotions to facilitate thinking, and managing emotions effectively.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Four Core Abilities Section -->
+        <section class="topic-section">
+            <div class="section-header">
+                <h2 class="section-title">Four Core Abilities of Emotional Intelligence</h2>
+                <p class="section-subtitle">The fundamental components that make up emotional intelligence</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3><i class="fas fa-eye"></i> 1. Perceive Emotions</h3>
+                    <p>Recognize and identify emotions in oneself and others. This includes understanding facial expressions, body language, and emotional cues in various situations.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-brain"></i> 2. Understanding Emotional Meanings</h3>
+                    <p>Comprehend the significance and implications of different emotions. Understand how emotions can influence thoughts, decisions, and behaviors.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-lightbulb"></i> 3. Use Emotions to Facilitate Thinking</h3>
+                    <p>Leverage emotional information to enhance cognitive processes, problem-solving, and decision-making. Use emotions as valuable data for better outcomes.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-cogs"></i> 4. Managing Emotions</h3>
+                    <p>Regulate and control emotional responses effectively. Manage both positive and negative emotions to maintain emotional balance and professional composure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Skills Section -->
+        <section class="topic-section">
+            <div class="section-header">
+                <h2 class="section-title">Key Skills to Develop Emotional Intelligence</h2>
+                <p class="section-subtitle">Essential competencies for emotional intelligence development</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3><i class="fas fa-user-check"></i> 1. Self-Awareness</h3>
+                    <p>Understanding your own emotions, strengths, weaknesses, and how they affect your thoughts and behavior. Recognize your emotional triggers and patterns.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-om"></i> 2. Mindfulness</h3>
+                    <p>Being present and aware of your current emotional state. Practice mindful observation of your thoughts and feelings without judgment.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-rocket"></i> 3. Motivation</h3>
+                    <p>Using emotional awareness to drive personal and professional goals. Channel emotions into productive energy and maintain enthusiasm for objectives.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-heart"></i> 4. Empathy</h3>
+                    <p>Understanding and sharing the feelings of others. Recognize and respond appropriately to the emotional needs and perspectives of colleagues and clients.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-users"></i> 5. Social Skills</h3>
+                    <p>Managing relationships effectively through emotional awareness. Build rapport, communicate clearly, and navigate social situations with emotional intelligence.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section class="topic-section">
+            <div class="section-header">
+                <h2 class="section-title">Emotional Intelligence and Leadership</h2>
+                <p class="section-subtitle">How emotional intelligence enhances leadership effectiveness</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3><i class="fas fa-user-friends"></i> Leading Others</h3>
+                    <p>The ability to perceive, understand and respond to the personal feelings of others. Effective leaders use emotional intelligence to inspire, motivate, and guide their teams toward common goals.</p>
+                    <ul>
+                        <li>Recognize team members' emotional states</li>
+                        <li>Respond appropriately to concerns and feedback</li>
+                        <li>Create an emotionally supportive work environment</li>
+                        <li>Build trust and psychological safety</li>
+                    </ul>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-user-cog"></i> Leading Self</h3>
+                    <p>Recognizing your emotions and acting on them in a reflective and rational manner. Self-leadership through emotional intelligence involves managing your own emotional responses and maintaining professional composure.</p>
+                    <ul>
+                        <li>Monitor your emotional reactions</li>
+                        <li>Make decisions based on rational analysis</li>
+                        <li>Maintain emotional balance under pressure</li>
+                        <li>Model emotional intelligence for others</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <p>
+                    <strong>Leadership Insight:</strong> The most effective leaders combine both self-awareness and empathy to create authentic connections with their teams while maintaining emotional balance and professional judgment.
+                </p>
+            </div>
+        </section>
+
+        <!-- Learning Outcomes Section -->
+        <section class="topic-section">
+            <div class="learning-outcomes">
+                <h2><i class="fas fa-graduation-cap"></i> What I Learn</h2>
+                <div class="outcomes-grid">
+                    <div class="outcome-item">
+                        <i class="fas fa-user-check"></i>
+                        <h4>Self-Awareness</h4>
+                        <p>Understanding your own emotions, triggers, and how they influence your professional behavior and decision-making</p>
+                    </div>
+                    <div class="outcome-item">
+                        <i class="fas fa-om"></i>
+                        <h4>Mindfulness</h4>
+                        <p>Developing present-moment awareness and the ability to observe emotions without judgment in professional settings</p>
+                    </div>
+                    <div class="outcome-item">
+                        <i class="fas fa-heart"></i>
+                        <h4>Empathy</h4>
+                        <p>Understanding and responding to the emotions of colleagues, clients, and stakeholders with compassion and insight</p>
+                    </div>
+                    <div class="outcome-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Social Skills</h4>
+                        <p>Building strong professional relationships through effective emotional communication and interpersonal skills</p>
+                    </div>
+                    <div class="outcome-item">
+                        <i class="fas fa-crown"></i>
+                        <h4>Leadership</h4>
+                        <p>Applying emotional intelligence to lead both yourself and others with authenticity, empathy, and emotional balance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Back to Chapters -->
+    <section class="back-to-chapters">
+        <div class="container">
+            <a href="ps-chapters.html" class="btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to PS Chapters
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mahima Paseda Kusumsiri. All rights reserved.</p>
+                <p>Professional Skills Development - Building Tomorrow's Leaders</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

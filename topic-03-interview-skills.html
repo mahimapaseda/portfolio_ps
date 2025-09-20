@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03. Interview Skills - PS Chapters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Topic Detail Page Styles */
+        .topic-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .topic-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .topic-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .topic-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .topic-content {
+            padding: 4rem 0;
+        }
+
+        .topic-section {
+            margin-bottom: 4rem;
+        }
+
+        .topic-section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .topic-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .skill-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.15);
+        }
+
+        .skill-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .skill-card h5 {
+            color: #1e293b;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .skill-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .interview-definition {
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .interview-definition h3 {
+            color: #1e293b;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .interview-definition p {
+            color: #64748b;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .strategy-section {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .strategy-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .strategy-tips {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .tip-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .tip-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .tip-item i {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .tip-item h6 {
+            color: #1e293b;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .tip-item p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .communication-section {
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+        }
+
+        .communication-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .communication-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .communication-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        .communication-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .communication-card h5 {
+            color: #1e293b;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .communication-card p {
+            color: #64748b;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .pitfalls-section {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .pitfalls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .pitfall-card {
+            background: #fef2f2;
+            border: 2px solid #fecaca;
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .pitfall-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(239, 68, 68, 0.15);
+        }
+
+        .pitfall-icon {
+            width: 50px;
+            height: 50px;
+            background: #ef4444;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .pitfall-card h6 {
+            color: #dc2626;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .pitfall-card p {
+            color: #7f1d1d;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .back-to-topics {
+            text-align: center;
+            padding: 2rem 0;
+            background: #f8fafc;
+        }
+
+        .back-to-topics .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-topics .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .topic-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .strategy-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .communication-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pitfalls-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">MPK</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ps-chapters.html" class="nav-link">PS Chapters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Topic Hero Section -->
+    <section class="topic-hero">
+        <div class="container">
+            <div class="topic-hero-content">
+                <h1>03. Interview Skills</h1>
+                <p>
+                    Develop confidence and competence in various interview formats and presentation techniques. 
+                    Master the art of effective communication and professional presentation during job interviews.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topic Content -->
+    <section class="topic-content">
+        <div class="container">
+            <!-- What is a Job Interview -->
+            <div class="interview-definition">
+                <h3>What is a Job Interview?</h3>
+                <p>
+                    A job interview is a conversation between a job applicant and a representative of the organization 
+                    that is looking forward to hiring the interviewee. Everyone involved in a job interview has a 
+                    common purpose - to determine if there's a good fit between the candidate and the position.
+                </p>
+            </div>
+
+            <!-- The Best Interview Strategy -->
+            <div class="topic-section">
+                <h2>The Best Interview Strategy</h2>
+                <div class="strategy-section">
+                    <div class="strategy-content">
+                        <div class="strategy-tips">
+                            <div class="tip-item">
+                                <i class="fas fa-search"></i>
+                                <div>
+                                    <h6>Research the Company</h6>
+                                    <p>Learn about the company's mission, values, recent news, and industry position to show genuine interest.</p>
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-user-tie"></i>
+                                <div>
+                                    <h6>Know Your Role</h6>
+                                    <p>Understand the job requirements, responsibilities, and how your skills align with the position.</p>
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-comments"></i>
+                                <div>
+                                    <h6>Prepare Your Stories</h6>
+                                    <p>Have specific examples ready that demonstrate your skills, achievements, and problem-solving abilities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategy-tips">
+                            <div class="tip-item">
+                                <i class="fas fa-question-circle"></i>
+                                <div>
+                                    <h6>Prepare Questions</h6>
+                                    <p>Have thoughtful questions ready about the role, team, company culture, and growth opportunities.</p>
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h6>Practice Timing</h6>
+                                    <p>Practice your responses to common questions and ensure you can convey your points concisely.</p>
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-smile"></i>
+                                <div>
+                                    <h6>Stay Positive</h6>
+                                    <p>Maintain a positive attitude throughout the interview and show enthusiasm for the opportunity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Role of Effective Communication -->
+            <div class="topic-section">
+                <h2>The Role of Effective Communication</h2>
+                <div class="communication-section">
+                    <div class="communication-grid">
+                        <div class="communication-card">
+                            <div class="communication-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h5>Verbal Communication</h5>
+                            <p>Speak clearly, use appropriate language, and articulate your thoughts effectively to convey your message.</p>
+                        </div>
+                        <div class="communication-card">
+                            <div class="communication-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h5>Non-Verbal Communication</h5>
+                            <p>Use body language, facial expressions, and gestures to reinforce your verbal message and show confidence.</p>
+                        </div>
+                        <div class="communication-card">
+                            <div class="communication-icon">
+                                <i class="fas fa-ear-listen"></i>
+                            </div>
+                            <h5>Active Listening</h5>
+                            <p>Pay full attention to the interviewer, show understanding, and respond appropriately to their questions.</p>
+                        </div>
+                        <div class="communication-card">
+                            <div class="communication-icon">
+                                <i class="fas fa-reply"></i>
+                            </div>
+                            <h5>Responding</h5>
+                            <p>Answer questions directly, provide relevant examples, and ask clarifying questions when needed.</p>
+                        </div>
+                        <div class="communication-card">
+                            <div class="communication-icon">
+                                <i class="fas fa-question"></i>
+                            </div>
+                            <h5>Questioning</h5>
+                            <p>Ask thoughtful questions that demonstrate your interest in the role and understanding of the company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Communication Best Practices -->
+            <div class="topic-section">
+                <h2>Communication Best Practices</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <h5>Learn to Smile and Greet</h5>
+                        <p>Practice a warm, genuine smile and professional greeting to create a positive first impression.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h5>Maintain Eye Contact</h5>
+                        <p>Keep positive and comfortable eye contact to show confidence and engagement throughout the interview.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-chair"></i>
+                        </div>
+                        <h5>Proper Posture</h5>
+                        <p>Sit firmly and straight on your chair to project confidence and professionalism.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Common Pitfalls of Unsuccessful Candidates -->
+            <div class="topic-section">
+                <h2>Common Pitfalls of Unsuccessful Candidates</h2>
+                <div class="pitfalls-section">
+                    <div class="pitfalls-grid">
+                        <div class="pitfall-card">
+                            <div class="pitfall-icon">
+                                <i class="fas fa-question"></i>
+                            </div>
+                            <h6>Vague Ideas</h6>
+                            <p>Had unclear or poorly articulated thoughts about their career goals and the role they were applying for.</p>
+                        </div>
+                        <div class="pitfall-card">
+                            <div class="pitfall-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h6>Rarely Used Company Name</h6>
+                            <p>Failed to reference the company name or show specific knowledge about the organization during the interview.</p>
+                        </div>
+                        <div class="pitfall-card">
+                            <div class="pitfall-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <h6>Didn't Know About the Company</h6>
+                            <p>Lacked basic knowledge about the company's business, mission, values, or recent developments.</p>
+                        </div>
+                        <div class="pitfall-card">
+                            <div class="pitfall-icon">
+                                <i class="fas fa-volume-mute"></i>
+                            </div>
+                            <h6>Neutral Tone</h6>
+                            <p>Responded in a monotone or neutral manner, failing to show enthusiasm or passion for the opportunity.</p>
+                        </div>
+                        <div class="pitfall-card">
+                            <div class="pitfall-icon">
+                                <i class="fas fa-eye-slash"></i>
+                            </div>
+                            <h6>Little Eye Contact</h6>
+                            <p>Made minimal eye contact, appearing disinterested or lacking confidence in their abilities.</p>
+                        </div>
+                        <div class="pitfall-card">
+                            <div class="pitfall-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <h6>Resisted Topic Shifts</h6>
+                            <p>Struggled to adapt when the interviewer changed topics or asked follow-up questions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Learning Outcomes -->
+            <div class="topic-section">
+                <h2>Key Learning Outcomes</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h5>Effective Communication</h5>
+                        <p>Develop strong verbal and non-verbal communication skills essential for successful interview performance.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h5>Interview Preparation</h5>
+                        <p>Learn comprehensive preparation strategies including research, practice, and strategic planning.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-smile-beam"></i>
+                        </div>
+                        <h5>Positive Attitude</h5>
+                        <p>Cultivate a confident, enthusiastic, and professional demeanor that makes a lasting positive impression.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h5>Common Pitfalls</h5>
+                        <p>Understand and avoid the most common mistakes that lead to unsuccessful interview outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Topics -->
+    <section class="back-to-topics">
+        <div class="container">
+            <a href="ps-chapters.html" class="btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to PS Topics
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mahima Paseda Kusumsiri. All rights reserved.</p>
+                <p>Professional Skills Development - Building Tomorrow's Leaders</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
