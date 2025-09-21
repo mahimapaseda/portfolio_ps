@@ -225,3 +225,4 @@ Use the same Formspree JavaScript code but change the fetch URL to your Netlify 
 5. Monitor your email for incoming messages
 
 Your contact form will now actually send emails to `mahimapasedakusumsiri@gmail.com`!
+
