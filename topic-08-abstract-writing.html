@@ -293,46 +293,90 @@
             .learning-outcomes ul {
                 grid-template-columns: 1fr;
             }
-        }
+        }    
+
+        .event-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.event-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.event-details h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.event-details p {
+    font-size: 1.1rem;
+    color: #475569;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.event-details .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+       
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">MPK</span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="ps-chapters.html" class="nav-link">PS Chapters</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html#education" class="nav-link">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+     <!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- New Student Info -->
+        <div class="nav-info">
+            <span class="student-id">SA23804838</span> |
         </div>
-    </nav>
+        <div class="nav-logo">
+            <span class="logo-text">MPK</span>
+        </div>
+        
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a href="ps-chapters.html" class="nav-link">PS Chapters</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
+
+        
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <section class="topic-hero">
@@ -435,6 +479,30 @@
             </ul>
         </section>
     </div>
+
+            <!-- Event Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-calendar-alt"></i> ARCSCU Event</h2>
+            
+            <div class="event-grid">
+                <div class="event-image">
+                    <img src="img/ARCSCU.jpg" alt="ARCSCU Event" />
+                </div>
+                <div class="event-details">
+                    <h3>Annual Research Conference of Students and Career Unit (ARCSCU)</h3>
+                    <p>
+                        The ARCSCU event provides students with a platform to present their research, 
+                        enhance communication skills, and network with professionals. It is an 
+                        essential step for academic and career development, encouraging innovation 
+                        and collaboration among peers.
+                    </p>
+                    <a href="https://www.facebook.com/share/p/16zi8tAYZj/" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-facebook"></i> View on Facebook
+                    </a>
+                </div>
+            </div>
+        </section>
+
 
     <!-- Footer -->
     <footer class="footer">

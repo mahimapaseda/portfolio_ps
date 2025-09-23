@@ -9,6 +9,24 @@ html {
     scroll-behavior: smooth;
 }
 
+.nav-info {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left: 1.5rem;
+    white-space: nowrap;
+}
+
+.nav-info .student-id {
+    color: #667eea;
+    font-weight: 700;
+}
+
+.nav-info .student-name {
+    color: #ffffff;
+}
+
+
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -19,6 +37,25 @@ body {
     -moz-osx-font-smoothing: grayscale;
     position: relative;
 }
+.ps-topic-date {
+    font-size: 0.85rem;
+    color: #94a3b8;   /* soft gray */
+    margin-top: auto;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+    font-style: italic;
+}
+.ps-topic-card .ps-topic-date {
+    opacity: 0.8;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.ps-topic-card:hover .ps-topic-date {
+    color: #667eea;   /* matches your gradient blue */
+    opacity: 1;
+}
+
 
 /* Professional Background Animations */
 body::before {

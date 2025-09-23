@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Professional Skills | Mahima Paseda Kusumsiri</title>
+    <meta name="description" content="Event highlights, student activities, and learning moments gallery.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .gallery-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .gallery-hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        .gallery-hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .gallery-section {
+            background: #f8fafc;
+            padding: 4rem 0;
+        }
+        .gallery-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery-card {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background: #ffffff;
+            border: 1px solid rgba(102, 126, 234, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+        }
+        .gallery-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-caption {
+            padding: 1rem 1.25rem;
+            background: #ffffff;
+        }
+        .gallery-caption h4 {
+            margin: 0 0 0.25rem 0;
+            color: #1e293b;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .gallery-caption p {
+            margin: 0;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        .back-to-chapters {
+            background: #f8fafc;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .back-to-chapters .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+        .back-to-chapters .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+        @media (max-width: 768px) {
+            .gallery-hero h1 { font-size: 2.2rem; }
+            .gallery-card img { height: 200px; }
+        }
+    </style>
+    <link rel="canonical" href="https://mahimapaseda.com/gallery.html">
+    <meta name="author" content="Mahima Paseda Kusumsiri">
+</head>
+<body>
+     <!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- New Student Info -->
+        <div class="nav-info">
+            <span class="student-id">SA23804838</span> |
+        </div>
+        <div class="nav-logo">
+            <span class="logo-text">MPK</span>
+        </div>
+        
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a href="ps-chapters.html" class="nav-link">PS Chapters</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
+
+        
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+    <section class="gallery-hero">
+        <div class="container">
+            <h1><i class="fas fa-images"></i> Gallery</h1>
+            <p>Event highlights, student activities, and learning moments</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="img/PS01.jpg" alt="Professional Skills PS01">
+            </div>
+            <div class="gallery-card">
+                <img src="img/PS02.jpg" alt="Professional Skills PS02">
+            </div>
+            <div class="gallery-card">
+                <img src="img/PS03.jpg" alt="Professional Skills PS03">
+            </div>
+            <div class="gallery-card">
+                <img src="img/PS04.jpg" alt="Professional Skills PS04">
+            </div>
+            <div class="gallery-card">
+                <img src="img/PS05.jpg" alt="Professional Skills PS05">
+            </div>
+            <div class="gallery-card">
+                <img src="img/PS06.jpg" alt="Professional Skills PS06">
+            </div>
+            <div class="gallery-card">
+                <img src="img/PS07.jpg" alt="Professional Skills PS07">
+            </div>
+            <div class="gallery-card">
+                <img src="img/PS08.jpg" alt="Professional Skills PS08">
+            </div>
+            <div class="gallery-card">
+                <img src="img/PS09.jpg" alt="Professional Skills PS09">
+            </div>
+            <div class="gallery-card">
+                <img src="img/foodfest01.jpg" alt="Food Festival Setup">
+            </div>
+            <div class="gallery-card">
+                <img src="img/foodfest02.jpg" alt="Team Preparation">
+            </div>
+            <div class="gallery-card">
+                <img src="img/foodfest03.jpg" alt="Food Display">
+            </div>
+            <div class="gallery-card">
+                <img src="img/foodfest04.jpg" alt="Customer Service">
+            </div>
+            <div class="gallery-card">
+                <img src="img/foodfest05.jpg" alt="Event Atmosphere">
+            </div>
+            <div class="gallery-card">
+                <img src="img/foodfest06.jpg" alt="Team Collaboration">
+            </div>
+            <div class="gallery-card">
+                <img src="img/foodfest07.jpg" alt="Event Success">
+            </div>
+            <div class="gallery-card">
+                <img src="img/ARCSCU.jpg" alt="ARCSCU Event">
+            </div>
+        </div>
+    </section>
+
+    <section class="back-to-chapters">
+        <div class="container">
+            <a href="ps-chapters.html" class="btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to PS Chapters
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mahima Paseda Kusumsiri. All rights reserved.</p>
+                <p>Professional Skills Development - Building Tomorrow's Leaders</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
