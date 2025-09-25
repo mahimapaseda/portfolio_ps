@@ -25,7 +25,128 @@ html {
 .nav-info .student-name {
     color: #ffffff;
 }
+/* CV Examples Section Styles */
+.cv-examples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
 
+.cv-image-container {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.cv-image-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(102, 126, 234, 0.15);
+}
+
+.cv-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #f8fafc;
+}
+
+.cv-example-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 16px;
+}
+
+.cv-image-wrapper:hover .cv-example-image {
+    transform: scale(1.05);
+}
+
+.cv-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 2rem 1.5rem 1.5rem;
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.cv-image-wrapper:hover .cv-overlay {
+    transform: translateY(0);
+}
+
+.cv-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.cv-description {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+/* Responsive Design for CV Examples */
+@media (max-width: 768px) {
+    .cv-examples {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .cv-image-container {
+        padding: 1rem;
+    }
+    
+    .cv-example-image {
+        height: 400px;
+    }
+    
+    .cv-overlay {
+        padding: 1.5rem 1rem 1rem;
+    }
+    
+    .cv-title {
+        font-size: 1.1rem;
+    }
+    
+    .cv-description {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-examples {
+        gap: 1rem;
+    }
+    
+    .cv-image-container {
+        padding: 0.75rem;
+    }
+    
+    .cv-example-image {
+        height: 350px;
+    }
+    
+    .cv-overlay {
+        padding: 1rem 0.75rem 0.75rem;
+    }
+    
+    .cv-title {
+        font-size: 1rem;
+    }
+    
+    .cv-description {
+        font-size: 0.8rem;
+    }
+}
 
 body {
     font-family: 'Inter', sans-serif;
