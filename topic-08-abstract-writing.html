@@ -293,7 +293,23 @@
             .learning-outcomes ul {
                 grid-template-columns: 1fr;
             }
+            .event-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+            .event-details {
+                text-align: center;
+            }
+            .event-details .btn {
+                justify-content: center;
+            }
         }    
+
+        @media (max-width: 480px) {
+            .event-details h3 {
+                font-size: 1.4rem;
+            }
+        }
 
         .event-grid {
     display: grid;
@@ -392,10 +408,26 @@
             <h2><i class="fas fa-lightbulb"></i> What is Abstract Writing?</h2>
             <p>Abstract writing means a condensed form of a longer piece of writing. There are two main types of abstract that serve different purposes in academic and professional communication.</p>
             
-            <div class="highlight-box">
-                <h4><i class="fas fa-info-circle"></i> Key Purpose</h4>
-                <p>Abstracts provide readers with a brief synopsis of the entire work, allowing them to quickly understand the main points and decide whether to read the full document.</p>
-            </div>
+            
+        </section>
+
+        <!-- Components of a Research Paper (from lesson visuals) -->
+        <section class="content-section">
+            <h2><i class="fas fa-list-ol"></i> Components of a Research Paper</h2>
+            <ol class="steps-list">
+                <li><strong>Title</strong></li>
+                <li><strong>Author Details</strong> (Affiliation must be mentioned)</li>
+                <li><strong>Table of Content</strong></li>
+                <li><strong>Abstract</strong></li>
+                <li><strong>Declaration</strong></li>
+                <li><strong>Acknowledgment</strong></li>
+                <li><strong>Abstract</strong></li>
+                <li><strong>Introduction</strong> (Background of the study)</li>
+                <li><strong>Literature Review</strong></li>
+                <li><strong>Methodology</strong></li>
+                <li><strong>Results and Discussions</strong></li>
+                <li><strong>Conclusion and References</strong></li>
+            </ol>
         </section>
 
         <!-- Types of Abstracts -->
@@ -466,6 +498,29 @@
             </ol>
         </section>
 
+        <!-- Abstract section details (from lesson visuals) -->
+        <section class="content-section">
+            <h2><i class="fas fa-file-signature"></i> Abstract</h2>
+            <ul>
+                <li>Includes a summary of the study.</li>
+                <li>It should be written as one paragraph (often <strong>150 – 250 words</strong>).</li>
+                <li>Include keywords.</li>
+                <li>Should include the <strong>4 C's</strong> of abstract writing:
+                    <ul>
+                        <li>Complete</li>
+                        <li>Concise</li>
+                        <li>Clear</li>
+                        <li>Cohesive</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3><i class="fas fa-layer-group"></i> Types of Abstracts</h3>
+            <ul>
+                <li>Informative abstracts</li>
+                <li>Descriptive abstracts</li>
+            </ul>
+        </section>
+
         <!-- Learning Outcomes -->
         <section class="learning-outcomes">
             <h2><i class="fas fa-graduation-cap"></i> What I Learn</h2>
@@ -479,25 +534,28 @@
         </section>
     </div>
 
+        
+
             <!-- Event Section -->
         <section class="content-section">
-            <h2><i class="fas fa-calendar-alt"></i> ARCSCU Event</h2>
-            
-            <div class="event-grid">
-                <div class="event-image">
-                    <img src="img/ARCSCU.jpg" alt="ARCSCU Event" />
-                </div>
-                <div class="event-details">
-                    <h3>Annual Research Conference of Sliit City Uni (ARCSCU)</h3>
-                    <p>
-                        The ARCSCU event provides students with a platform to present their research, 
-                        enhance communication skills, and network with professionals. It is an 
-                        essential step for academic and career development, encouraging innovation 
-                        and collaboration among peers.
-                    </p>
-                    <a href="https://www.facebook.com/share/p/16zi8tAYZj/" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-facebook"></i> View on Facebook
-                    </a>
+            <div class="container">
+                <h2><i class="fas fa-calendar-alt"></i> ARCSCU Event</h2>
+                <div class="event-grid">
+                    <div class="event-image">
+                        <img src="img/ARCSCU.jpg" alt="ARCSCU Event" />
+                    </div>
+                    <div class="event-details">
+                        <h3>Annual Research Conference of SLIIT City UNI (ARCSCU)</h3>
+                        <p>
+                            The ARCSCU event provides students with a platform to present their research,
+                            enhance communication skills, and network with professionals. It is an
+                            essential step for academic and career development, encouraging innovation
+                            and collaboration among peers.
+                        </p>
+                        <a href="https://www.facebook.com/share/p/16zi8tAYZj/" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-facebook"></i> View on Facebook
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
